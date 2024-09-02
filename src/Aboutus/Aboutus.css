@@ -1,0 +1,634 @@
+.aboutuscentriccontainer {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px 0px 100px;
+  /* gap: 80px; */
+  background: linear-gradient(to bottom, white, #d8e6f0, #cee2ed);
+  background: "linear-gradient(to right, red, blue, green)";
+  /* padding-top: 30px; */
+}
+
+.aboutusexperiencecontainer {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px 0px 100px;
+  /* gap: 80px; */
+  background-color: rgb(241, 241, 241);
+  /* padding-top: 30px; */
+}
+/* .aboutusexperiencecontainer, */
+.aboutusglobalcontainer {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px 0px 70px;
+  /* gap: 60px; */
+  background-color: rgb(255, 255, 255);
+  /* margin-top: 30px; */
+}
+.aboutuscentric,
+.aboutusexperience,
+.aboutusglobal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  gap: 20px;
+}
+.aboutuscentrictheader,
+.aboutusexperiencetheader,
+.aboutusglobaltheader {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.aboutuscentricttext,
+.aboutusexperiencettext,
+.aboutusglobalttext {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+.aboutuscentricbtn {
+  height: 50px;
+  width: 190px;
+  border: none;
+  background-color: #010165;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.aboutuscentricbtn:hover {
+  border: none;
+  color: #010165;
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+.aboutuscentricimg,
+.aboutusexperienceimg {
+  height: 380px;
+  width: 380px;
+  border-radius: 15px;
+}
+.aboutusglobalimg {
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+}
+.lifeatpeak {
+  background-image: url("/src/Aboutus/bckimg.png");
+  height: 110vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 17%;
+}
+.lifeatpeakfirsttext {
+  font-size: 60px;
+  margin-top: 110px;
+  /* margin-bottom: 200px; */
+}
+.lifeatpeaksecondtext {
+  font-size: 32px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.lifeatpeakthirdtext {
+  font-size: 18px;
+  line-height: 30px;
+}
+.lifeatpeaktextcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 37%;
+}
+.lifeatpeakimgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lifeatpeakimgcontainer img {
+  border-radius: 15px;
+  height: 300px;
+}
+.lifeatpeakbtncontainer {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.lifeatpeakbtncontainer button {
+  padding: 0px 20px;
+  height: 40px;
+  width: auto;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.lifeatpeakbtncontainer button div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.lifeatpeakbtncontainer button:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: #010165;
+  transition: 0.6s;
+}
+@media (min-width: 900px) and (max-width: 1150px) {
+  .aboutuscentriccontainer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px 0px 80px;
+    /* gap: 80px; */
+    background: linear-gradient(to bottom, white, #d8e6f0, #cee2ed);
+    background: "linear-gradient(to right, red, blue, green)";
+    /* padding-top: 30px; */
+  }
+
+  .aboutusexperiencecontainer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px 0px 60px;
+    /* gap: 80px; */
+    background-color: rgb(241, 241, 241);
+    /* padding-top: 30px; */
+  }
+  /* .aboutusexperiencecontainer, */
+  .aboutusglobalcontainer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 80px;
+    /* gap: 60px; */
+    background-color: rgb(255, 255, 255);
+    /* margin-top: 30px; */
+  }
+  .aboutuscentric,
+  .aboutusexperience,
+  .aboutusglobal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    gap: 20px;
+  }
+  .aboutuscentrictheader,
+  .aboutusexperiencetheader,
+  .aboutusglobaltheader {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .aboutuscentricttext,
+  .aboutusexperiencettext,
+  .aboutusglobalttext {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+  .aboutuscentricbtn {
+    height: 50px;
+    width: 190px;
+    border: none;
+    background-color: #010165;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  .aboutuscentricbtn:hover {
+    border: none;
+    color: #010165;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+  }
+  .aboutuscentricimg,
+  .aboutusexperienceimg {
+    height: 350px;
+    width: 350px;
+    border-radius: 15px;
+  }
+  .aboutusglobalimg {
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .lifeatpeak {
+    background-image: url("/src/Aboutus/bckimg.png");
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    /* align-items: center; */
+
+    /* gap: 17%; */
+  }
+  .lifeatpeakfirsttext {
+    font-size: 55px;
+    margin-top: 15px;
+    /* margin-bottom: 200px; */
+  }
+  .lifeatpeaksecondtext {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .lifeatpeakthirdtext {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .lifeatpeaktextcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+  .lifeatpeakimgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+  }
+  .lifeatpeakimgcontainer img {
+    border-radius: 15px;
+    height: 300px;
+  }
+  .lifeatpeakbtncontainer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .lifeatpeakbtncontainer button {
+    padding: 0px 20px;
+    height: 40px;
+    width: auto;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  .lifeatpeakbtncontainer button div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .lifeatpeakbtncontainer button:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #010165;
+    transition: 0.6s;
+  }
+}
+@media (min-width: 750.1px) and (max-width: 899.9px) {
+  .aboutuscentriccontainer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 40px;
+    /* gap: 80px; */
+    background: linear-gradient(to bottom, white, #d8e6f0, #cee2ed);
+    background: "linear-gradient(to right, red, blue, green)";
+    /* padding-top: 30px; */
+  }
+
+  .aboutusexperiencecontainer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px 0px 20px;
+    /* gap: 80px; */
+    background-color: rgb(241, 241, 241);
+    /* padding-top: 30px; */
+  }
+  /* .aboutusexperiencecontainer, */
+  .aboutusglobalcontainer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 40px;
+    /* gap: 60px; */
+    background-color: rgb(255, 255, 255);
+    /* margin-top: 30px; */
+  }
+  .aboutuscentric,
+  .aboutusexperience,
+  .aboutusglobal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    gap: 20px;
+  }
+  .aboutuscentrictheader,
+  .aboutusexperiencetheader,
+  .aboutusglobaltheader {
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .aboutuscentricttext,
+  .aboutusexperiencettext,
+  .aboutusglobalttext {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .aboutuscentricbtn {
+    height: 50px;
+    width: 190px;
+    border: none;
+    background-color: #010165;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  .aboutuscentricbtn:hover {
+    border: none;
+    color: #010165;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+  }
+  .aboutuscentricimg,
+  .aboutusexperienceimg {
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+  }
+  .aboutusglobalimg {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .lifeatpeak {
+    background-image: url("/src/Aboutus/bckimg.png");
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    /* align-items: center; */
+
+    /* gap: 17%; */
+  }
+  .lifeatpeakfirsttext {
+    font-size: 50px;
+    margin-top: 20px;
+    /* margin-bottom: 200px; */
+  }
+  .lifeatpeaksecondtext {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .lifeatpeakthirdtext {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .lifeatpeaktextcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+  .lifeatpeakimgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .lifeatpeakimgcontainer img {
+    border-radius: 15px;
+    height: 300px;
+  }
+  .lifeatpeakbtncontainer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 140px;
+  }
+  .lifeatpeakbtncontainer button {
+    padding: 0px 20px;
+    height: 40px;
+    width: auto;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  .lifeatpeakbtncontainer button div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .lifeatpeakbtncontainer button:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #010165;
+    transition: 0.6s;
+  }
+}
+@media (max-width: 750px) {
+  .aboutuscentriccontainer {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 40px;
+    margin-top: 40px;
+    gap: 20px;
+    background: linear-gradient(to bottom, white, #d8e6f0, #cee2ed);
+    background: "linear-gradient(to right, red, blue, green)";
+    padding-bottom: 20px;
+  }
+
+  .aboutusexperiencecontainer {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: center;
+    padding: 0px 30px 0px 20px;
+    padding-top: 30px;
+    gap: 10px;
+    background-color: rgb(241, 241, 241);
+    /* padding-top: 30px; */
+    padding-bottom: 20px;
+  }
+  /* .aboutusexperiencecontainer, */
+  .aboutusglobalcontainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0px 40px 0px 40px;
+
+    background-color: rgb(255, 255, 255);
+    /* margin-top: 30px; */
+    padding-bottom: 20px;
+  }
+  .aboutuscentric,
+  .aboutusexperience,
+  .aboutusglobal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    gap: 10px;
+  }
+  .aboutuscentrictheader,
+  .aboutusexperiencetheader,
+  .aboutusglobaltheader {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .aboutuscentricttext,
+  .aboutusexperiencettext,
+  .aboutusglobalttext {
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+  }
+  .aboutuscentricbtn {
+    height: 50px;
+    width: 190px;
+    border: none;
+    background-color: #010165;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  .aboutuscentricbtn:hover {
+    border: none;
+    color: #010165;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+  }
+  .aboutuscentricimg,
+  .aboutusexperienceimg {
+    height: 230px;
+    width: 230px;
+    border-radius: 15px;
+  }
+  .aboutusglobalimg {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+  }
+  .lifeatpeak {
+    background-image: none;
+    background-color: #010165;
+    height: auto;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    /* align-items: center; */
+
+    /* gap: 17%; */
+  }
+  .lifeatpeakfirsttext {
+    font-size: 50px;
+    margin-top: 20px;
+    /* margin-bottom: 200px; */
+  }
+  .lifeatpeaksecondtext {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .lifeatpeakthirdtext {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .lifeatpeaktextcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+  .lifeatpeakimgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .lifeatpeakimgcontainer img {
+    border-radius: 15px;
+    width: 80%;
+  }
+  .lifeatpeakbtncontainer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 60px;
+  }
+  .lifeatpeakbtncontainer button {
+    padding: 0px 20px;
+    height: 40px;
+    width: auto;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  .lifeatpeakbtncontainer button div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .lifeatpeakbtncontainer button:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #010165;
+    transition: 0.6s;
+  }
+}

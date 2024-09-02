@@ -1,0 +1,126 @@
+.maintenance_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  /* width: 100%; */
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 80px;
+  background-color: rgb(255, 255, 255);
+}
+.maintenance_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+.maintenance_text_header {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+.maintenance_text_subheader {
+  font-size: 20px;
+  margin-top: 10px;
+  background-color: red;
+  margin-bottom: 45px;
+}
+.coreareas {
+  display: flex;
+  gap: 60px;
+}
+.coreareas div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.corearea_img {
+  height: 100px;
+  width: 100px;
+
+  /* border-radius: 25px; */
+}
+.coreareas span {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .coreareas {
+    display: flex;
+    gap: 30px;
+  }
+}
+@media (min-width: 800px) and (max-width: 999.9px) {
+  .coreareas {
+    display: flex;
+    gap: 20px;
+  }
+  .coreareas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    text-align: center;
+    padding: 6px;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .coreareas span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media (min-width: 500px) and (max-width: 799.9px) {
+  .maintenance_text {
+    margin-top: 50px;
+  }
+  .maintenance_text_header {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .coreareas {
+    display: flex;
+    flex-direction: column;
+  }
+  .coreareas span {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .corearea_img {
+    height: 90px;
+    width: 90px;
+
+    /* border-radius: 25px; */
+  }
+}
+@media (max-width: 499.9px) {
+  .maintenance_text {
+    margin-top: 50px;
+  }
+  .maintenance_text_header {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .coreareas {
+    display: flex;
+    flex-direction: column;
+  }
+  .coreareas span {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .corearea_img {
+    height: 90px;
+    width: 90px;
+
+    /* border-radius: 25px; */
+  }
+}

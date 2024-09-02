@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Aboutus } from "./Aboutus/Aboutus";
+import "./App.css";
+import { Contactme } from "./Contactme/Contactme";
+import Header from "./Header/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Services } from "./Services/Services";
+import { Clients } from "./Clients/Clients";
+import { Contact } from "./Contact/Contact";
+import { Management } from "./Management/Management";
+import ScrollToTop from "./ScrollToTop";
+import { Policy } from "./Policy/Policy";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Header />}></Route>
+          <Route path="/aboutus" element={<Aboutus />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/clients" element={<Clients />}></Route>
+
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/management" element={<Management />}></Route>
+          <Route path="/policy" element={<Policy />}></Route>
+        </Routes>
+        <Contactme />
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,0 +1,268 @@
+.managementcontainer {
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: #010165;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.managementfirsttext {
+  font-size: 50px;
+  color: white;
+  font-weight: 500;
+}
+.teammembers {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+.oneteammember {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 190px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 6px;
+  align-items: center;
+  border-radius: 10px;
+}
+.oneteammemberimg {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+}
+.oneteammemberspan {
+  font-size: 17px;
+  font-weight: 500;
+}
+.oneteammemberdoesspan {
+  font-size: 15px;
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  .managementcontainer {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #010165;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .managementfirsttext {
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+  }
+  .teammembers {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .oneteammember {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 170px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 6px;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .oneteammemberimg {
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+  }
+  .oneteammemberspan {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .oneteammemberdoesspan {
+    font-size: 15px;
+  }
+}
+@media (min-width: 700px) and (max-width: 799.9px) {
+  .managementcontainer {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #010165;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .managementfirsttext {
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+  }
+  .teammembers {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .oneteammember {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 190px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 6px;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .oneteammemberimg {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+  }
+  .oneteammemberspan {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .oneteammemberdoesspan {
+    font-size: 15px;
+  }
+}
+@media (min-width: 600px) and (max-width: 699.9px) {
+  .managementcontainer {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #010165;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .managementfirsttext {
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+  }
+  .teammembers {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+  .oneteammember {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 180px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 6px;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .oneteammemberimg {
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+  }
+  .oneteammemberspan {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .oneteammemberdoesspan {
+    font-size: 15px;
+  }
+}
+@media (min-width: 400px) and (max-width: 599.9px) {
+  .managementcontainer {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #010165;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .managementfirsttext {
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+  }
+  .teammembers {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .oneteammember {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 180px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 6px;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .oneteammemberimg {
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+  }
+  .oneteammemberspan {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .oneteammemberdoesspan {
+    font-size: 15px;
+  }
+}
+@media (max-width: 399.9px) {
+  .managementcontainer {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #010165;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .managementfirsttext {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+  }
+  .teammembers {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .oneteammember {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 140px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 6px;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .oneteammemberimg {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+  }
+  .oneteammemberspan {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .oneteammemberdoesspan {
+    font-size: 15px;
+  }
+}

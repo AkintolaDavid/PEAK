@@ -1,0 +1,230 @@
+@media (min-width: 900px) and (max-width: 1450px) {
+  .policymaincontainer {
+    display: flex;
+    justify-content: center;
+  }
+  .policycontainer {
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    width: 900px;
+    /* gap: 25px; */
+  }
+  .policyheader {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 30px;
+  }
+  .policytextcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .policytext {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .policysubheader {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 13px;
+    margin-top: 17px;
+  }
+  .policysubheaderterm {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    /* margin-top: 25px; */
+  }
+  .policylicense {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  .policylicenseroman {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .policydisclaimer {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+}
+@media (min-width: 700px) and (max-width: 899.9px) {
+  .policymaincontainer {
+    display: flex;
+    justify-content: center;
+  }
+  .policycontainer {
+    height: auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    width: 700px;
+    /* gap: 25px; */
+  }
+  .policyheader {
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .policytextcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .policytext {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .policysubheader {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 16px;
+  }
+  .policysubheaderterm {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    /* margin-top: 25px; */
+  }
+  .policylicense {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .policylicenseroman {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .policydisclaimer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media (min-width: 500px) and (max-width: 699.9px) {
+  .policymaincontainer {
+    display: flex;
+    justify-content: center;
+  }
+  .policycontainer {
+    height: auto;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    width: 500px;
+    /* gap: 25px; */
+  }
+  .policyheader {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  .policytextcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .policytext {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .policysubheader {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 16px;
+  }
+  .policysubheaderterm {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    /* margin-top: 25px; */
+  }
+  .policylicense {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .policylicenseroman {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .policydisclaimer {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+}
+
+@media (max-width: 499.9px) {
+  .policymaincontainer {
+    display: flex;
+    justify-content: center;
+  }
+  .policycontainer {
+    height: auto;
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    width: 350px;
+    /* gap: 25px; */
+  }
+  .policyheader {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .policytextcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .policytext {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .policysubheader {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 12px;
+  }
+  .policysubheaderterm {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* margin-top: 25px; */
+  }
+  .policylicense {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .policylicenseroman {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .policydisclaimer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

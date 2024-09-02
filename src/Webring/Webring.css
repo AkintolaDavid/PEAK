@@ -1,0 +1,83 @@
+.webringcontainer,
+.webringcontainer2 {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.webringfirst {
+  font-size: 40px;
+  font-weight: 500;
+}
+.webringssecond {
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  width: 75%;
+  align-items: center;
+  line-height: 32px;
+}
+.webringcontainer2,
+.webringcontainer {
+  background-color: rgb(233, 233, 233);
+}
+@media (min-width: 550px) and (max-width: 750px) {
+  .webringcontainer,
+  .webringcontainer2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .webringfirst {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .webringssecond {
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    width: 79%;
+    align-items: center;
+    line-height: 28px;
+  }
+  .webringcontainer2,
+  .webringcontainer {
+    background-color: rgb(233, 233, 233);
+  }
+}
+@media (max-width: 549.9px) {
+  .webringcontainer,
+  .webringcontainer2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .webringfirst {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .webringssecond {
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    width: 83%;
+    align-items: center;
+    line-height: 22px;
+  }
+  .webringcontainer2,
+  .webringcontainer {
+    background-color: rgb(233, 233, 233);
+  }
+}
