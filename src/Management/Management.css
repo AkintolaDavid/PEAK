@@ -12,8 +12,9 @@
   color: white;
   font-weight: 500;
 }
+
 .teammembers {
-  margin-top: 50px;
+  margin-top: 35px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 60px;
@@ -28,6 +29,44 @@
   gap: 6px;
   align-items: center;
   border-radius: 10px;
+}
+.ceocontainet {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 230px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 6px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.ceoimg {
+  width: 180px;
+  border-radius: 50%;
+}
+.ceonamespan {
+  font-size: 17px;
+  font-weight: 500;
+}
+.groupnamespan {
+  font-size: 20px;
+  font-weight: 500;
+}
+.groupimg {
+  width: 500px;
+  border-radius: 10px;
+}
+.groupcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 30px 30px 20px 30px;
+  border-radius: 10px;
+  margin-top: 30px;
 }
 .oneteammemberimg {
   height: 160px;
@@ -130,6 +169,44 @@
   .oneteammemberdoesspan {
     font-size: 15px;
   }
+  .ceocontainet {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 220px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 6px;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .ceoimg {
+    width: 170px;
+    border-radius: 50%;
+  }
+  .ceonamespan {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .groupnamespan {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .groupimg {
+    width: 430px;
+    border-radius: 10px;
+  }
+  .groupcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px 30px 20px 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
 }
 @media (min-width: 600px) and (max-width: 699.9px) {
   .managementcontainer {
@@ -174,6 +251,44 @@
   }
   .oneteammemberdoesspan {
     font-size: 15px;
+  }
+  .ceocontainet {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 210px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 6px;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .ceoimg {
+    width: 180px;
+    border-radius: 50%;
+  }
+  .ceonamespan {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .groupnamespan {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .groupimg {
+    width: 400px;
+    border-radius: 10px;
+  }
+  .groupcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px 30px 20px 30px;
+    border-radius: 10px;
+    margin-top: 30px;
   }
 }
 @media (min-width: 400px) and (max-width: 599.9px) {
@@ -220,6 +335,44 @@
   .oneteammemberdoesspan {
     font-size: 15px;
   }
+  .ceocontainet {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 210px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 6px;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .ceoimg {
+    width: 180px;
+    border-radius: 50%;
+  }
+  .ceonamespan {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .groupnamespan {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .groupimg {
+    width: 350px;
+    border-radius: 10px;
+  }
+  .groupcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px 20px 10px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
 }
 @media (max-width: 399.9px) {
   .managementcontainer {
@@ -264,5 +417,43 @@
   }
   .oneteammemberdoesspan {
     font-size: 15px;
+  }
+  .ceocontainet {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 6px;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .ceoimg {
+    width: 180px;
+    border-radius: 50%;
+  }
+  .ceonamespan {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .groupnamespan {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .groupimg {
+    width: 300px;
+    border-radius: 10px;
+  }
+  .groupcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px 20px 10px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
   }
 }

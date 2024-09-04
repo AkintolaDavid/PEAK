@@ -54,12 +54,12 @@ export const Contact = () => {
             <div>
               {" "}
               <FaPhoneAlt className="contactusinformationicon" />
-              <span>PEAK PHONE INFO</span>
+              <span>08023206975</span>
             </div>
             <div>
               <IoMdMail className="contactusinformationicon" />
 
-              <span>PEAK EMAIL INFO</span>
+              <span> Info@peakshippingnigeria.com</span>
             </div>
             <div>
               <FaMapLocationDot className="contactusinformationicon" />

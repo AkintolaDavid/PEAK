@@ -78,13 +78,13 @@ export const Contactme = () => {
             <span> Apapa, Lagos – Nigeria.</span>
             <span>
               {" "}
-              <IoMdMail style={{ marginRight: "15px", fontSize: "21px" }} />
-              ___________
+              <IoMdMail style={{ marginRight: "10px", fontSize: "19px" }} />
+              Info@peakshippingnigeria.com
             </span>
             <span>
               {" "}
-              <FaPhoneAlt style={{ marginRight: "15px", fontSize: "21px" }} />
-              _____________
+              <FaPhoneAlt style={{ marginRight: "10px", fontSize: "19px" }} />
+              08023206975
             </span>
           </div>
         </div>
