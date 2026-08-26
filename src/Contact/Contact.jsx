@@ -8,7 +8,6 @@ export const Contact = () => {
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [message, setmessage] = useState("");
-  const [from, setfrom] = useState("CONTACT US");
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -24,7 +23,7 @@ export const Contact = () => {
             name,
             email,
             message,
-            from,
+            from: "CONTACT US",
           }),
         }
       );
@@ -67,6 +66,7 @@ export const Contact = () => {
               <span>1A, Bristol Road, GRA, Apapa, Lagos, Nigeria.</span>
             </div>
             <iframe
+              title="Peak Shipping Agency office location"
               width="85%"
               height="300"
               frameborder="0"

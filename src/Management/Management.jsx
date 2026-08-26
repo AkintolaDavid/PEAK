@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./Management.css";
 import pic from "../Testimonies/download.jpeg";

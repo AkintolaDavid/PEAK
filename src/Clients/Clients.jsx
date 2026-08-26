@@ -1,6 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./Clients.css";
-import clientbkg from "./clientt.jpg";
 import nnpc from "./nnpcc.png";
 import nepal from "./nepal.png";
 import sahara from "./sahara.jpg";

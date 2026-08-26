@@ -1,9 +1,7 @@
 import { React } from "react";
 import { useEffect } from "react";
-import top from "../assets/contactmelogo.png";
 import top2 from "../Header/TOP.jpg";
 import { FaPhoneAlt } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
