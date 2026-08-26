@@ -1,47 +1,17 @@
 import React from "react";
+import { FaCompass, FaEye, FaHandshake } from "react-icons/fa6";
 import "./Core.css";
-import mission from "../Header/mission.jpg";
-import vision from "../Header/vision.jpg";
-import value from "../Header/values.jpg";
-export const Core = () => {
-  return (
-    <div className="maintenance_container">
-      <div className="maintenance_text">
-        <span className="maintenance_text_header">Company's Pillar </span>
-        {/* <span className="maintenance_text_subheader">say somethng</span> */}
-      </div>
-      <div className="coreareas">
-        <div className="coreelectrical">
-          <img src={mission} className="corearea_img" />
-          <h2>Mission</h2>
-          <span>
-            We aim to become a one stop solution Maritime Services Provider
-            offering sophisticated Shipping Agency Services, Logistic Support,
-            Supply Requirements to both foreign and local clients through modern
-            practices with the help of the company's highly motivated and
-            dedicated personnel with relevant experience.
-          </span>
-        </div>
-        <div className="coremechanical">
-          <img src={vision} className="corearea_img" />
-          <h2>Vision</h2>
-          <span>
-            To be the number one Shipping Agency of choice to Ship Owners,
-            Managers and Charterers trading on the West African Coast and
-            beyond.
-          </span>
-        </div>
-        <div className="coregeneral">
-          <img src={value} className="corearea_img" />
-          <h2> Values</h2>
-          <span>
-            We are committed to providing exceptional service to our clients,
-            exceeding their expectations, We uphold the highest ethical
-            standards in all and We strive for excellence in our work,
-            demonstrating expertise and dedication in every task.
-          </span>
-        </div>
-      </div>
+
+const pillars = [
+  { icon:<FaCompass/>, number:"01", title:"Our mission", text:"To be the one-stop maritime partner for sophisticated agency, logistics and vessel supply requirements." },
+  { icon:<FaEye/>, number:"02", title:"Our vision", text:"To be the shipping agency of choice for ship owners, managers and charterers across West Africa and beyond." },
+  { icon:<FaHandshake/>, number:"03", title:"Our values", text:"Integrity, responsiveness and operational excellence guide every decision we make and every vessel we serve." },
+];
+export const Core = () => (
+  <section className="maintenance_container">
+    <div className="pillar-intro"><div><p className="section-label">What guides us</p><h2>Built on strong foundations</h2></div><p>We bring discipline, accountability and care to complex maritime operations.</p></div>
+    <div className="coreareas">
+      {pillars.map(p=><article key={p.title}><span className="pillar-number">{p.number}</span><div className="pillar-icon">{p.icon}</div><h3>{p.title}</h3><p>{p.text}</p></article>)}
     </div>
-  );
-};
+  </section>
+);

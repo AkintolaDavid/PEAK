@@ -9,6 +9,7 @@ import { Contact } from "./Contact/Contact";
 import { Management } from "./Management/Management";
 import ScrollToTop from "./ScrollToTop";
 import { Policy } from "./Policy/Policy";
+import "./Polish.css";
 function App() {
   return (
     <div>

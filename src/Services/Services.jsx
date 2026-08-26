@@ -7,7 +7,7 @@ import freshwater from "./freahwater.jpg";
 import hotel from "./hotell.jpg";
 import jetty from "./jetty.png";
 import logistics from "./logistics.jpg";
-import offshore from "./offshore.jpg";
+import offshore from "./offshore-hd.png";
 import shiplogo from "./shiplogo.jpg";
 import "./Services.css";
 import { Navbar } from "../Navbar/Navbar";
