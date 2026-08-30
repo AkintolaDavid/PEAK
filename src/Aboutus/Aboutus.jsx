@@ -1,113 +1,124 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { Link } from "react-router-dom";
-import global from "./global.png";
-import experience from "./experience.png";
-import customer from "./customer.jpg";
-import lifeatpeakimg from "./staff2.jpg";
-import { FaArrowRight } from "react-icons/fa6";
+import staff2 from "./staff2.jpg";
+import bckimg from "./about-hero.jpg";
+import { FaArrowRight, FaHandshake, FaEarthAfrica, FaUserGraduate, FaCircleUser } from "react-icons/fa6";
 import "./Aboutus.css";
 import { Navbar } from "../Navbar/Navbar";
+import { usePageMeta } from "../usePageMeta";
+
+const leaders = [
+  { role: "Managing Director" },
+  { role: "Director of Operations" },
+  { role: "Head of Marine Services" },
+  { role: "Head of Logistics" },
+];
+
+const pillars = [
+  {
+    icon: <FaHandshake />,
+    title: "Client-centric",
+    text: "We tailor every engagement to the client's needs, with open, transparent communication from first contact to final sign-off.",
+  },
+  {
+    icon: <FaEarthAfrica />,
+    title: "Global reach, local expertise",
+    text: "A strong network and deep knowledge of Nigerian regulations let us deliver reliably across international and local markets alike.",
+  },
+  {
+    icon: <FaUserGraduate />,
+    title: "Experienced team",
+    text: "Our people bring years of hands-on shipping and logistics experience, kept current through ongoing training.",
+  },
+];
+
 export const Aboutus = () => {
+  usePageMeta(
+    "About",
+    "PEAK Shipping Agency Limited has coordinated shipping agency, marine and logistics operations for ship owners, managers and charterers along the West African coast since 2007."
+  );
   return (
     <div>
       <Navbar />
-      <div className="aboutuscentriccontainer">
-        {" "}
-        <div>
-          <img src={customer} className="aboutuscentricimg" />
-        </div>
-        <div className="aboutuscentric">
-          <span className="aboutuscentrictheader">
-            WE ARE A CLIENT-CENTRIC TEAM.
-          </span>
-          <span className="aboutuscentricttext">
-            Peak Shipping Agency prides itself on providing tailored solutions
-            to meet the unique needs of each client. We foster open and
-            transparent communication channels to ensure clients are
-            well-informed throughout the shipping process. We ensure to always
-            deliver exceptional service, exceeding client expectations and
-            building long-lasting relationships.
-          </span>
-        </div>
-      </div>
 
-      <div className="aboutusglobalcontainer">
-        <div className="aboutusglobal">
-          <span className="aboutusglobaltheader">
-            WE OFFER GLOBAL REACH AND LOCAL EXPERTISE.
-          </span>
-          <span className="aboutusglobalttext">
-            Peak Shipping Agency has a strong international network, allowing
-            them to offer seamless shipping solutions across various global
-            markets. Their deep understanding of the Nigerian shipping landscape
-            enables them to navigate local regulations and customs efficiently.
-            The company provides provide comprehensive and reliable service by
-            strategic partnerships with key industry players
-          </span>
+      <section className="about-hero" style={{ backgroundImage: `url(${bckimg})` }}>
+        <div className="about-hero-shade" />
+        <div className="about-hero-content">
+          <p className="eyebrow"><span /> About Peak Shipping Agency</p>
+          <h1>Built on trust. <em>Proven since 2007.</em></h1>
+          <p>
+            PEAK Shipping Agency Limited is a Nigerian shipping agency, marine
+            and logistics partner, registered with the Nigerian Ports
+            Authority and relevant maritime authorities.
+          </p>
         </div>
-        <div>
-          <img src={global} className="aboutusglobalimg" />
-        </div>
-      </div>
+      </section>
 
-      <div className="aboutusexperiencecontainer">
-        <div>
-          <img src={experience} className="aboutusexperienceimg" />
+      <section className="about-story">
+        <img src={staff2} className="about-story-img" alt="Peak Shipping Agency team at work" />
+        <div className="about-story-copy">
+          <p className="section-label">Who we are</p>
+          <h2>A single point of contact, from arrival to sailing.</h2>
+          <p>
+            PEAK Shipping Agency Limited has supported ship owners, managers
+            and charterers along the West African coast since 2007. Based in
+            Apapa, Lagos, we coordinate shipping agency, marine and logistics
+            operations end to end — so our clients spend less time waiting
+            and more time moving.
+          </p>
+          <p>
+            We pair on-the-ground knowledge of Nigerian ports and regulations
+            with responsive, transparent communication at every stage, so
+            clients always know where their operation stands.
+          </p>
         </div>
-        <div className="aboutusexperience">
-          <span className="aboutusexperiencetheader">
-            WE ARE EXPERIENCED AND KNOWLEDGEABLE.
-          </span>
-          <span className="aboutusexperiencettext">
-            Peak Shipping Agency employs a team of highly qualified and
-            experienced professionals who possess in-depth knowledge of the
-            shipping logistics industry. The company invests in ongoing training
-            and development to ensure its staff remains up-to-date with industry
-            trends and best practices.
-          </span>
-        </div>
-      </div>
+      </section>
 
-      <div className="lifeatpeak">
-        <div className="lifeatpeaktextcontainer">
-          <span className="lifeatpeakfirsttext">Life At Peak</span>
-          <span className="lifeatpeaksecondtext">Why Work At Peak?</span>
-          <span className="lifeatpeakthirdtext">
-            Peak Shipping Agency Limited is one of the biggest private sector
-            employers in Nigeria. With the help of a robust, consistent, and
-            meritocratic framework for people management, Peak continues to
-            maintain a high-performance, inclusive, progressive environment,
-            where unprecedented access to opportunities for growth is available
-            and purpose-driven talent is developed.
-          </span>
-          <div className="lifeatpeakbtncontainer">
-            {" "}
-            <Link to="/management">
-              {" "}
-              <button>
-                {" "}
-                <div>
-                  {" "}
-                  Meet Our Team <FaArrowRight style={{ marginLeft: "10px" }} />
-                </div>
-              </button>{" "}
-            </Link>
-            <Link to="/contact">
-              {" "}
-              <button>
-                <div>
-                  {" "}
-                  Let's Talk <FaArrowRight style={{ marginLeft: "10px" }} />
-                </div>
-              </button>{" "}
-            </Link>
-          </div>
+      <section className="about-pillars">
+        <div className="about-pillars-intro">
+          <p className="section-label">What sets us apart</p>
+          <h2>Why clients work with Peak</h2>
         </div>
-        <div className="lifeatpeakimgcontainer">
-          <img src={lifeatpeakimg} />
+        <div className="about-pillars-grid">
+          {pillars.map((p) => (
+            <article key={p.title}>
+              <div className="pillar-icon">{p.icon}</div>
+              <h3>{p.title}</h3>
+              <p>{p.text}</p>
+            </article>
+          ))}
         </div>
-      </div>
+      </section>
+
+      <section className="about-leadership">
+        <div className="about-pillars-intro">
+          <p className="section-label">Leadership</p>
+          <h2>The team steering Peak</h2>
+        </div>
+        <div className="about-leadership-grid">
+          {leaders.map((l) => (
+            <article key={l.role}>
+              <div className="leadership-avatar"><FaCircleUser /></div>
+              <h3>{l.role}</h3>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="about-cta">
+        <div>
+          <p>READY WHEN YOU ARE</p>
+          <h2>Let's talk about your operation.</h2>
+        </div>
+        <div className="about-cta-actions">
+          <Link to="/contact" className="button primary">
+            Get in touch <FaArrowRight />
+          </Link>
+          <Link to="/services" className="button ghost">
+            Explore our services
+          </Link>
+        </div>
+      </section>
     </div>
   );
 };

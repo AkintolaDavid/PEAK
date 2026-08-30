@@ -1,8 +1,13 @@
 import React from "react";
 import "./Policy.css";
 import { Navbar } from "../Navbar/Navbar";
+import { usePageMeta } from "../usePageMeta";
 
 export const Policy = () => {
+  usePageMeta(
+    "Privacy Policy",
+    "How PEAK Shipping Agency Limited collects, uses and protects information across its website."
+  );
   return (
     <>
       <Navbar />

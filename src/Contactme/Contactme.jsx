@@ -1,10 +1,9 @@
 import { React } from "react";
 import { useEffect } from "react";
-import top2 from "../Header/TOP.jpg";
+import top2 from "../Header/TOP.png";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Contactme.css";
@@ -41,14 +40,6 @@ export const Contactme = () => {
                 Services
               </Link>
             </span>
-            {/* <span>
-              <Link
-                to="/contactus"
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                Management
-              </Link>
-            </span> */}
             <span>
               {" "}
               <Link
@@ -72,8 +63,8 @@ export const Contactme = () => {
         <div className="nigeria_office">
           <h2>Nigeria Office</h2>
           <div>
-            <span>1A, Bristol Road, GRA,</span>
-            <span> Apapa, Lagos – Nigeria.</span>
+            <span>Peak House, 11B North Avenue,</span>
+            <span>off Tamandu Barracks, Apapa GRA, Lagos.</span>
             <span>
               {" "}
               <IoMdMail style={{ marginRight: "10px", fontSize: "19px" }} />
@@ -106,19 +97,17 @@ export const Contactme = () => {
                 <a
                   href={twitterUrl}
                   target="_blank"
-                  rel="noopener noreferrer "
+                  rel="noopener noreferrer"
                   style={{ color: "inherit" }}
                 >
                   <FaXTwitter />{" "}
                 </a>
               </div>
-              <div className="social_icons_you">
-                <FaYoutube />
-              </div>
             </div>
           </div>
           <div className="copyright">
-            © Copyright 2024 Peak Shipping Agency All right reserved.
+            © {new Date().getFullYear()} Peak Shipping Agency Limited. All rights
+            reserved.
           </div>
         </div>
       </div>

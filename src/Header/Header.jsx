@@ -4,8 +4,14 @@ import { FaArrowRight, FaAnchor, FaShip, FaGlobeAfrica } from "react-icons/fa";
 import { Navbar } from "../Navbar/Navbar";
 import { Webring } from "../Webring/Webring";
 import { Testimonies } from "../Testimonies/Testimonies";
+import { usePageMeta } from "../usePageMeta";
 
-const Header = () => (
+const Header = () => {
+  usePageMeta(
+    null,
+    "Dependable shipping agency, marine and logistics support across Nigerian ports and the West African coast since 2007."
+  );
+  return (
   <>
     <div className="headercontainer">
       <Navbar />
@@ -30,5 +36,6 @@ const Header = () => (
     <Webring />
     <Testimonies />
   </>
-);
+  );
+};
 export default Header;

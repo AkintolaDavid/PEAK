@@ -1,144 +1,129 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
+import { Link } from "react-router-dom";
 import transfer from "./transfer.jpg";
 import towing from "./towing.jpg";
 import crew from "./crew.jpg";
 import canal from "./canal.jpg";
-import freshwater from "./freahwater.jpg";
 import jetty from "./jetty.png";
 import logistics from "./logistics.jpg";
 import offshore from "./offshore-hd.png";
-import shiplogo from "./shiplogo.jpg";
+import servicesHero from "./services-hero.jpg";
+import shiplogo from "../Header/ship.jpg";
+import sailors from "../Contact/sailors.jpg";
+import { FaArrowRight } from "react-icons/fa6";
 import "./Services.css";
 import { Navbar } from "../Navbar/Navbar";
+import { usePageMeta } from "../usePageMeta";
+
+const groups = [
+  {
+    name: "Marine",
+    items: [
+      {
+        img: offshore,
+        title: "Offshore support services",
+        text: "A one-stop maritime services provider offering sophisticated shipping agency services, logistics support and supply requirements to foreign and local clients through modern practices and a dedicated, experienced team.",
+      },
+      {
+        img: jetty,
+        title: "Jetty / terminal operations",
+        text: "The shipping agency of choice for ship owners, managers and charterers trading on the West African coast and beyond.",
+      },
+      {
+        img: transfer,
+        title: "Ship-to-ship transfer",
+        text: "Exceptional service that exceeds client expectations, upholding the highest ethical standards and demonstrating expertise and dedication in every task.",
+      },
+    ],
+  },
+  {
+    name: "Logistics",
+    items: [
+      {
+        img: logistics,
+        title: "Custom clearing",
+        text: "End-to-end clearing support that keeps cargo moving through Nigerian ports without unnecessary delay or cost.",
+      },
+      {
+        img: crew,
+        title: "Crew change",
+        text: "Fast, well-coordinated crew changes with attention to documentation, immigration and vessel schedules.",
+      },
+      {
+        img: towing,
+        title: "Towage & barge operations",
+        text: "Reliable towage and barge operations, planned and executed with strict attention to safety and timing.",
+      },
+    ],
+  },
+  {
+    name: "Shipping",
+    items: [
+      {
+        img: shiplogo,
+        title: "Shipping agency",
+        text: "Full shipping agency representation for vessels calling at Nigerian ports, from pre-arrival planning to final sailing.",
+      },
+      {
+        img: sailors,
+        title: "Bunkering / fresh water supplies",
+        text: "Dependable bunkering and fresh water supply, coordinated to fit tight port turnaround windows.",
+      },
+      {
+        img: canal,
+        title: "Canal transit services",
+        text: "Transit planning and coordination that keeps vessels compliant and on schedule.",
+      },
+    ],
+  },
+];
 
 export const Services = () => {
+  usePageMeta(
+    "Services",
+    "Shipping agency, marine and offshore support, and logistics services — from pre-arrival planning and jetty operations to customs clearing, crew change and canal transit."
+  );
   return (
     <>
       <Navbar />
+      <section className="services-hero" style={{ backgroundImage: `url(${servicesHero})` }}>
+        <div className="services-hero-shade" />
+        <div className="services-hero-content">
+          <p className="eyebrow"><span /> What we do</p>
+          <h1>Our services</h1>
+          <p>
+            PEAK Shipping Agency Limited offers a full range of services grouped
+            into three areas: Shipping, Marine and Logistics.
+          </p>
+        </div>
+      </section>
+
       <div className="servicecontainer">
-        <div className="service_text">
-          <span className="service_text_header"> OUR SERVICES </span>
-          <span className="service_text_subheader">
-            At PEAK Shipping Agency Limited we offer various services that are
-            mainly grouped into these 3 : Shipping, Marine and Logistics
-          </span>
-        </div>
-
-        <div className="servicefirstcontent">
-          {" "}
-          <div className="servicefirst">Marine</div>
-          <div className="serviceareas">
-            {" "}
-            <div className="electrical">
-              <img src={offshore} className="area_img" />
-              <h2>Offshore support services</h2>
-              <span className="area_img_span">
-                We aim to become a one stop solution Maritime Services Provider
-                offering sophisticated Shipping Agency Services, Logistic
-                Support, and Supply Requirements to both foreign and local
-                clients through modern practices using a team of motivated and
-                highly dedicated professionals with relevant experience.
-              </span>
-            </div>
-            <div className="mechanical">
-              <img src={jetty} className="area_img" />
-              <h2>Jetty / Terminal Operations</h2>
-              <span className="area_img_span">
-                To be the number one Shipping Agency of choice to Ship Owners,
-                Managers and Charterers trading on the West African Coast and
-                beyond.
-              </span>
-            </div>
-            <div className="general">
-              <img src={transfer} className="area_img" />
-              <h2>Ship to ship transfer</h2>
-              <span className="area_img_span">
-                We are committed to providing exceptional service to our
-                clients, exceeding their expectations, We uphold the highest
-                ethical standards in all and We strive for excellence in our
-                work, demonstrating expertise and dedication in every task.
-              </span>
+        {groups.map((group) => (
+          <div className="servicefirstcontent" key={group.name}>
+            <div className="servicefirst">{group.name}</div>
+            <div className="serviceareas">
+              {group.items.map((item) => (
+                <div className="service-card" key={item.title}>
+                  <img src={item.img} className="area_img" alt={item.title} />
+                  <h2>{item.title}</h2>
+                  <span className="area_img_span">{item.text}</span>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-
-        <div className="servicefirstcontent">
-          {" "}
-          <div className="servicefirst">Logistics</div>
-          <div className="serviceareas">
-            {" "}
-            <div className="electrical">
-              <img src={logistics} className="area_img" />
-              <h2>Custom Clearing</h2>
-              <span className="area_img_span">
-                We aim to become a one stop solution Maritime Services Provider
-                offering sophisticated Shipping Agency Services, Logistic
-                Support, and Supply Requirements to both foreign and local
-                clients through modern practices using a team of motivated and
-                highly dedicated professionals with relevant experience.
-              </span>
-            </div>
-            <div className="mechanical">
-              <img src={crew} className="area_img" />
-              <h2>Crew Change</h2>
-              <span className="area_img_span">
-                To be the number one Shipping Agency of choice to Ship Owners,
-                Managers and Charterers trading on the West African Coast and
-                beyond.
-              </span>
-            </div>
-            <div className="general">
-              <img src={towing} className="area_img" />
-              <h2>Towage & barge operations</h2>
-              <span className="area_img_span">
-                We are committed to providing exceptional service to our
-                clients, exceeding their expectations, We uphold the highest
-                ethical standards in all and We strive for excellence in our
-                work, demonstrating expertise and dedication in every task.
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="servicefirstcontent">
-          {" "}
-          <div className="servicefirst">Shipping</div>
-          <div className="serviceareas">
-            {" "}
-            <div className="electrical">
-              <img src={shiplogo} className="area_img" />
-              <h2>Shipping Agency</h2>
-              <span className="area_img_span">
-                We aim to become a one stop solution Maritime Services Provider
-                offering sophisticated Shipping Agency Services, Logistic
-                Support, and Supply Requirements to both foreign and local
-                clients through modern practices using a team of motivated and
-                highly dedicated professionals with relevant experience.
-              </span>
-            </div>
-            <div className="mechanical">
-              <img src={freshwater} className="area_img" />
-              <h2>Bunkering / fresh water Supplies</h2>
-              <span className="area_img_span">
-                To be the number one Shipping Agency of choice to Ship Owners,
-                Managers and Charterers trading on the West African Coast and
-                beyond.
-              </span>
-            </div>
-            <div className="general">
-              <img src={canal} className="area_img" />
-              <h2>Canal Transit Services </h2>
-              <span className="area_img_span">
-                We are committed to providing exceptional service to our
-                clients, exceeding their expectations, We uphold the highest
-                ethical standards in all and We strive for excellence in our
-                work, demonstrating expertise and dedication in every task.
-              </span>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
+
+      <section className="services-cta">
+        <div>
+          <p>NEED A HAND WITH YOUR NEXT CALL?</p>
+          <h2>Let's talk about your operation.</h2>
+        </div>
+        <Link to="/contact">
+          Get in touch <FaArrowRight />
+        </Link>
+      </section>
     </>
   );
 };

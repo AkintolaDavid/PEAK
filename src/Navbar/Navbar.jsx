@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { CgMenuRight } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
-import top from "../Header/TOP.jpg";
+import top from "../Header/TOP.png";
 import "./Navbar.css";
 
 const links = [
   ["/", "Home"], ["/aboutus", "About"], ["/services", "Services"],
-  ["/management", "Team"], ["/clients", "Clients"],
+  ["/clients", "Clients"],
 ];
 
 export const Navbar = () => {
