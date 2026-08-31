@@ -1,4 +1,4 @@
-.notfound{min-height:calc(100vh - 88px);background:linear-gradient(160deg,#010F70,#000A4D);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px}
+.notfound{min-height:100vh;background:linear-gradient(160deg,#010F70,#000A4D);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px}
 .notfound-code{font-family:'Manrope',sans-serif;font-size:clamp(72px,14vw,150px);font-weight:800;line-height:1;letter-spacing:-.04em;color:#FF5A1F;margin:0}
 .notfound h1{font-family:'Manrope',sans-serif;font-size:clamp(26px,3.4vw,40px);letter-spacing:-.02em;margin:14px 0 12px}
 .notfound-copy{max-width:440px;color:#CBD1F2;line-height:1.7;margin:0 0 30px}

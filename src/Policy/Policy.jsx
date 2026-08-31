@@ -10,6 +10,7 @@ export const Policy = () => {
   );
   return (
     <>
+      <div className="policy-topbar" />
       <Navbar />
       <div className="policymaincontainer">
         <div className="policycontainer">

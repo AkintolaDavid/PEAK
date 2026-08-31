@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import storyImg from "./staff2.jpg";
+import storyImg from "./staff2.png";
 import bckimg from "./about-hero.jpg";
 import { FaArrowRight, FaHandshake, FaEarthAfrica, FaUserGraduate } from "react-icons/fa6";
 import "./Aboutus.css";

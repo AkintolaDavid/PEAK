@@ -1,6 +1,6 @@
 .services-hero{position:relative;min-height:46vh;background-position:center;background-size:cover;background-repeat:no-repeat;display:flex;align-items:center;color:#fff}
 .services-hero-shade{position:absolute;inset:0;background:linear-gradient(100deg,rgba(1,15,112,.88) 0%,rgba(1,15,112,.58) 45%,rgba(1,15,112,.15) 85%)}
-.services-hero-content{position:relative;z-index:2;width:min(1180px,calc(100% - 48px));margin:0 auto;padding:70px 0}
+.services-hero-content{position:relative;z-index:2;width:min(1180px,calc(100% - 48px));margin:0 auto;padding:150px 0 70px}
 .services-hero-content .eyebrow{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#CBD1F2;display:flex;align-items:center;gap:12px;margin:0 0 18px}
 .services-hero-content .eyebrow span{display:inline-block;width:34px;height:2px;background:#CB3800}
 .services-hero-content h1{font-family:'Manrope',sans-serif;font-size:clamp(38px,5.5vw,64px);letter-spacing:-.03em;margin:0 0 16px}

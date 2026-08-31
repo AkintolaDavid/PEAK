@@ -70,7 +70,7 @@ export const Contact = () => {
               width="100%"
               height="320"
               style={{ border: 0 }}
-              loading="lazy"
+              loading="eager"
               src={MAP_SRC}
             />
             <div className="contactus-support-note">

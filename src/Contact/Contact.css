@@ -1,6 +1,6 @@
 .contact-hero{position:relative;min-height:34vh;background:linear-gradient(120deg,#010F70,#000A4D);display:flex;align-items:center;color:#fff}
 .contact-hero-shade{position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(203,56,0,.35),transparent 55%)}
-.contact-hero-content{position:relative;z-index:2;width:min(1180px,calc(100% - 48px));margin:0 auto;padding:56px 0}
+.contact-hero-content{position:relative;z-index:2;width:min(1180px,calc(100% - 48px));margin:0 auto;padding:140px 0 56px}
 .contact-hero-content .eyebrow{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#CBD1F2;display:flex;align-items:center;gap:12px;margin:0 0 18px}
 .contact-hero-content .eyebrow span{display:inline-block;width:34px;height:2px;background:#CB3800}
 .contact-hero-content h1{font-family:'Manrope',sans-serif;font-size:clamp(36px,5vw,58px);letter-spacing:-.03em;margin:0 0 14px}

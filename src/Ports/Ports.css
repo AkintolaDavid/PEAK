@@ -1,7 +1,7 @@
 /* Hero */
 .ports-hero{position:relative;min-height:44vh;background-position:center;background-size:cover;background-repeat:no-repeat;display:flex;align-items:center;color:#fff}
 .ports-hero-shade{position:absolute;inset:0;background:linear-gradient(100deg,rgba(1,15,112,.94) 0%,rgba(1,15,112,.8) 45%,rgba(1,15,112,.4) 85%)}
-.ports-hero-content{position:relative;z-index:2;width:min(1180px,calc(100% - 48px));margin:0 auto;padding:64px 0}
+.ports-hero-content{position:relative;z-index:2;width:min(1180px,calc(100% - 48px));margin:0 auto;padding:145px 0 64px}
 .ports-hero-content .eyebrow{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#CBD1F2;display:flex;align-items:center;gap:12px;margin:0 0 18px}
 .ports-hero-content .eyebrow span{display:inline-block;width:34px;height:2px;background:#CB3800}
 .ports-hero-content h1{font-family:'Manrope',sans-serif;font-size:clamp(36px,5vw,58px);letter-spacing:-.03em;margin:0 0 16px}

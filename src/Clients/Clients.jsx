@@ -89,10 +89,6 @@ export const Clients = () => {
             <strong>17 yrs</strong>
             <span>Serving the sector</span>
           </div>
-          <div>
-            <strong>All ports</strong>
-            <span>Across Nigeria</span>
-          </div>
         </div>
         <div className="clientslogo">
           {clients.map((c) => (

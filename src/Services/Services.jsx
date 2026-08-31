@@ -7,7 +7,7 @@ import canal from "./canal.jpg";
 import jetty from "./jetty.png";
 import logistics from "./logistics.jpg";
 import offshore from "./offshore-hd.png";
-import servicesHero from "./services-hero.jpg";
+import servicesHero from "../Header/hero.jpg";
 import shiplogo from "../Header/ship.jpg";
 import sailors from "../Contact/sailors.jpg";
 import { FaArrowRight } from "react-icons/fa6";

@@ -5,7 +5,7 @@ import { Navbar } from "../Navbar/Navbar";
 import { usePageMeta } from "../usePageMeta";
 import "./Ports.css";
 
-import heroBg from "../Services/services-hero.jpg";
+import heroBg from "../Header/hero.jpg";
 import apapa from "./apapa.jpg";
 import tincan from "./tincan.jpg";
 import lekki from "./lekki.jpg";

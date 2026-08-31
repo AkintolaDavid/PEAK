@@ -1,4 +1,6 @@
+.policy-topbar{height:88px;background:#010F70}
 .policymaincontainer{background:#EEF0FA;display:flex;justify-content:center;padding:60px max(16px,calc((100% - 940px)/2)) 90px}
+@media(max-width:850px){.policy-topbar{height:76px}}
 .policycontainer{background:#fff;width:min(940px,100%);padding:clamp(28px,5vw,55px);border-radius:10px;box-shadow:0 10px 35px rgba(1,15,112,.08);display:flex;flex-direction:column}
 .policyheader{color:#010F70;font-family:'Manrope',sans-serif;font-size:clamp(24px,3.4vw,38px);font-weight:700;margin:28px 0 18px}
 .policyheader:first-child{margin-top:0}
