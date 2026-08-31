@@ -12,6 +12,20 @@ const services = [
 
 export const Testimonies = () => (
   <>
+    <section className="what-we-do">
+      <p className="section-label">What we do</p>
+      <h2>Four ways we keep your operation moving</h2>
+      <div className="what-we-do-grid">
+        {services.map((s) => (
+          <div key={s.title}>
+            <div className="what-we-do-icon">{s.icon}</div>
+            <h3>{s.title}</h3>
+            <p>{s.text}</p>
+          </div>
+        ))}
+      </div>
+      <Link to="/services" className="text-link">See all services <FaArrowRight/></Link>
+    </section>
     <section className="difference-section">
       <div className="difference-copy">
         <p className="section-label">The Peak difference</p>
@@ -30,20 +44,6 @@ export const Testimonies = () => (
           <p><FaHeadset/><span><b>One team</b> Always within reach</span></p>
         </div>
       </div>
-    </section>
-    <section className="what-we-do">
-      <p className="section-label">What we do</p>
-      <h2>Four ways we keep your operation moving</h2>
-      <div className="what-we-do-grid">
-        {services.map((s) => (
-          <div key={s.title}>
-            <div className="what-we-do-icon">{s.icon}</div>
-            <h3>{s.title}</h3>
-            <p>{s.text}</p>
-          </div>
-        ))}
-      </div>
-      <Link to="/services" className="text-link">See all services <FaArrowRight/></Link>
     </section>
     <section className="home-cta"><div><p>READY WHEN YOU ARE</p><h2>Let’s move your operation forward.</h2><div className="cta-points"><span><FaCheck/> Quick response</span><span><FaCheck/> Local port expertise</span><span><FaCheck/> 24/7 support</span></div></div><Link to="/contact">Start a conversation <FaArrowRight/></Link></section>
   </>
