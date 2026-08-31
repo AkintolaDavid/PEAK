@@ -7,7 +7,7 @@ import "./Navbar.css";
 
 const links = [
   ["/", "Home"], ["/aboutus", "About"], ["/services", "Services"],
-  ["/clients", "Clients"],
+  ["/ports", "Ports"], ["/clients", "Clients"],
 ];
 
 export const Navbar = () => {

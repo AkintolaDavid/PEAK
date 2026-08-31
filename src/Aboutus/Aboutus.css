@@ -8,7 +8,7 @@
 .about-hero-content p{max-width:560px;font-size:17px;line-height:1.65;color:#CBD1F2;margin:0}
 
 .about-story{display:flex;align-items:center;gap:70px;padding:90px max(20px,calc((100% - 1180px)/2));background:#fff}
-.about-story-img{width:46%;max-width:520px;height:420px;object-fit:cover;border-radius:6px 48px 6px 6px;flex-shrink:0;box-shadow:0 22px 48px rgba(1,15,112,.14)}
+.about-story-img{width:44%;max-width:480px;height:400px;object-fit:cover;border-radius:6px 48px 6px 6px;flex-shrink:0;box-shadow:0 22px 48px rgba(1,15,112,.14)}
 .about-story-copy{max-width:560px}
 .about-story .section-label{color:#CB3800;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 12px}
 .about-story-copy h2{font-family:'Manrope',sans-serif;font-size:clamp(28px,3.2vw,40px);line-height:1.15;letter-spacing:-.02em;color:#010F70;margin:0 0 20px}

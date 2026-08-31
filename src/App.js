@@ -8,6 +8,7 @@ import { Clients } from "./Clients/Clients";
 import { Contact } from "./Contact/Contact";
 import ScrollToTop from "./ScrollToTop";
 import { Policy } from "./Policy/Policy";
+import { Ports } from "./Ports/Ports";
 import { NotFound } from "./NotFound/NotFound";
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/aboutus" element={<Aboutus />}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/clients" element={<Clients />}></Route>
+          <Route path="/ports" element={<Ports />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/policy" element={<Policy />}></Route>
           <Route path="*" element={<NotFound />}></Route>
