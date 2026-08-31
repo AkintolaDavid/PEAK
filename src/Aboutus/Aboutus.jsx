@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import storyImg from "./story.jpg";
+import storyImg from "./staff2.jpg";
 import bckimg from "./about-hero.jpg";
 import { FaArrowRight, FaHandshake, FaEarthAfrica, FaUserGraduate } from "react-icons/fa6";
 import "./Aboutus.css";
@@ -71,7 +71,7 @@ export const Aboutus = () => {
       </section>
 
       <section className="about-story">
-        <img src={storyImg} className="about-story-img" alt="Peak Shipping Agency coordinating a vessel operation" />
+        <img src={storyImg} className="about-story-img" alt="Peak Shipping Agency staff reviewing vessel documentation" />
         <div className="about-story-copy">
           <p className="section-label">Who we are</p>
           <h2>A single point of contact, from arrival to sailing.</h2>
