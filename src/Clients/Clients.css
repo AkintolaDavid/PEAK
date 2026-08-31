@@ -7,11 +7,17 @@
 .clients-hero-content p{max-width:600px;font-size:17px;line-height:1.65;color:#CBD1F2;margin:0}
 
 .clientcontainer{background:#EEF0FA;padding:70px max(20px,calc((100% - 1180px)/2)) 90px}
+.clients-intro{max-width:620px;margin:0 0 26px}
+.clients-intro .section-label{color:#CB3800;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 12px}
+.clients-intro h2{font-family:'Manrope',sans-serif;font-size:clamp(24px,2.8vw,34px);color:#010F70;letter-spacing:-.02em;margin:0}
+.clients-stats{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:40px}
+.clients-stats>div{flex:1;min-width:150px;background:#010F70;border-radius:10px;padding:20px 22px}
+.clients-stats strong{display:block;font-family:'Manrope',sans-serif;font-size:24px;color:#FF5A1F;letter-spacing:-.01em}
+.clients-stats span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#CBD1F2}
 .clientslogo{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
-.client-card{background:#fff;border:1px solid #E1E4F5;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:16px;padding:26px 18px;min-height:150px;transition:transform .2s ease,box-shadow .2s ease}
-.client-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(1,15,112,.1)}
-.client-card-img{max-width:130px;max-height:52px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.9;transition:filter .25s ease,opacity .25s ease}
-.client-card:hover .client-card-img{filter:none;opacity:1}
+.client-card{background:#fff;border:1px solid #E1E4F5;border-top:3px solid #E1E4F5;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:16px;padding:26px 18px;min-height:150px;transition:transform .2s ease,box-shadow .2s ease,border-top-color .2s ease}
+.client-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(1,15,112,.1);border-top-color:#CB3800}
+.client-card-img{max-width:130px;max-height:52px;width:auto;object-fit:contain}
 .client-card span{font-size:13px;font-weight:600;color:#161B3D;line-height:1.4}
 
 .clients-cta{background:#010F70;color:#fff;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding:56px max(20px,calc((100% - 1180px)/2))}

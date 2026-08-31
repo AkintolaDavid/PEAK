@@ -76,6 +76,24 @@ export const Clients = () => {
       </section>
 
       <div className="clientcontainer">
+        <div className="clients-intro">
+          <p className="section-label">Trusted partners</p>
+          <h2>Backed by Nigeria's energy and maritime leaders</h2>
+        </div>
+        <div className="clients-stats">
+          <div>
+            <strong>20+</strong>
+            <span>Active clients</span>
+          </div>
+          <div>
+            <strong>17 yrs</strong>
+            <span>Serving the sector</span>
+          </div>
+          <div>
+            <strong>All ports</strong>
+            <span>Across Nigeria</span>
+          </div>
+        </div>
         <div className="clientslogo">
           {clients.map((c) => (
             <div className="client-card" key={c.name}>

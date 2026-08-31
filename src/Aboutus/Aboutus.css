@@ -25,14 +25,19 @@
 .about-pillars-grid h3{font-family:'Manrope',sans-serif;font-size:19px;color:#010F70;margin:0 0 10px}
 .about-pillars-grid p{color:#5B6472;line-height:1.7;margin:0;font-size:15px}
 
-.about-leadership{background:#fff;padding:90px max(20px,calc((100% - 1180px)/2))}
-.about-leadership-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.about-leadership-grid article{text-align:center;background:#EEF0FA;border-radius:10px;padding:34px 20px;border-top:3px solid transparent;transition:transform .2s ease,border-color .2s ease}
-.about-leadership-grid article:hover{transform:translateY(-4px);border-color:#CB3800}
-.leadership-avatar{width:76px;height:76px;margin:0 auto 18px;border-radius:50%;background:#fff;color:#010F70;display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:0 6px 18px rgba(1,15,112,.1)}
-.about-leadership-grid h3{font-family:'Manrope',sans-serif;font-size:16px;color:#010F70;margin:0}
+.about-leadership{background:linear-gradient(160deg,#010F70,#000A4D);color:#fff;padding:92px max(20px,calc((100% - 1180px)/2))}
+.about-leadership-head{max-width:640px;margin:0 0 46px}
+.about-leadership-head .section-label{color:#FF5A1F;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 12px}
+.about-leadership-head h2{font-family:'Manrope',sans-serif;font-size:clamp(26px,3vw,36px);margin:0 0 14px}
+.about-leadership-head p{color:#CBD1F2;line-height:1.7;margin:0}
+.about-leadership-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.about-leadership-grid article{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:28px 24px 30px;transition:transform .2s ease,background .2s ease,border-color .2s ease}
+.about-leadership-grid article:hover{transform:translateY(-4px);background:rgba(255,255,255,.08);border-color:#FF5A1F}
+.leadership-monogram{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:14px;background:#CB3800;color:#fff;font-family:'Manrope',sans-serif;font-weight:800;font-size:17px;margin-bottom:20px}
+.about-leadership-grid h3{font-family:'Manrope',sans-serif;font-size:17px;color:#fff;margin:0 0 8px}
+.about-leadership-grid article p{color:#CBD1F2;font-size:13.5px;line-height:1.6;margin:0}
 
-.about-cta{background:#010F70;color:#fff;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px;padding:60px max(20px,calc((100% - 1180px)/2))}
+.about-cta{background:#010F70;color:#fff;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px;padding:60px max(20px,calc((100% - 1180px)/2))}
 .about-cta p{font-size:12px;font-weight:700;letter-spacing:.14em;color:#CBD1F2;margin:0 0 8px}
 .about-cta h2{font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,34px);margin:0}
 .about-cta-actions{display:flex;gap:13px;flex-wrap:wrap}

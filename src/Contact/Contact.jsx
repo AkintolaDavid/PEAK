@@ -51,6 +51,7 @@ export const Contact = () => {
       <div className="ContactUscontainer">
         <div className="contactussendmessagecontainer">
           <div className="contactusinformation">
+            <p className="contactusinfo-title">Reach us directly</p>
             <div>
               <FaPhoneAlt className="contactusinformationicon" />
               <span>08023206975</span>
@@ -125,6 +126,10 @@ export const Contact = () => {
             <button className="contactussendmessagebtn" type="submit">
               Send Message
             </button>
+            <p className="contactusform-foot">
+              Prefer email? Write to{" "}
+              <a href={`mailto:${OFFICE_EMAIL}`}>{OFFICE_EMAIL}</a>.
+            </p>
           </form>
         </div>
       </div>

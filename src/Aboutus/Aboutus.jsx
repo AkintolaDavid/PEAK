@@ -1,17 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import staff2 from "./staff2.jpg";
+import storyImg from "./story.jpg";
 import bckimg from "./about-hero.jpg";
-import { FaArrowRight, FaHandshake, FaEarthAfrica, FaUserGraduate, FaCircleUser } from "react-icons/fa6";
+import { FaArrowRight, FaHandshake, FaEarthAfrica, FaUserGraduate } from "react-icons/fa6";
 import "./Aboutus.css";
 import { Navbar } from "../Navbar/Navbar";
 import { usePageMeta } from "../usePageMeta";
 
 const leaders = [
-  { role: "Managing Director" },
-  { role: "Director of Operations" },
-  { role: "Head of Marine Services" },
-  { role: "Head of Logistics" },
+  {
+    role: "Managing Director",
+    initials: "MD",
+    remit: "Sets company direction and owns principal client relationships.",
+  },
+  {
+    role: "Director of Operations",
+    initials: "DO",
+    remit: "Runs day-to-day vessel coordination across every port call.",
+  },
+  {
+    role: "Head of Marine Services",
+    initials: "MS",
+    remit: "Leads offshore, jetty and ship-to-ship transfer operations.",
+  },
+  {
+    role: "Head of Logistics",
+    initials: "HL",
+    remit: "Oversees customs clearing, haulage and cargo movement.",
+  },
 ];
 
 const pillars = [
@@ -55,7 +71,7 @@ export const Aboutus = () => {
       </section>
 
       <section className="about-story">
-        <img src={staff2} className="about-story-img" alt="Peak Shipping Agency team at work" />
+        <img src={storyImg} className="about-story-img" alt="Peak Shipping Agency coordinating a vessel operation" />
         <div className="about-story-copy">
           <p className="section-label">Who we are</p>
           <h2>A single point of contact, from arrival to sailing.</h2>
@@ -91,15 +107,20 @@ export const Aboutus = () => {
       </section>
 
       <section className="about-leadership">
-        <div className="about-pillars-intro">
+        <div className="about-leadership-head">
           <p className="section-label">Leadership</p>
           <h2>The team steering Peak</h2>
+          <p>
+            Experienced maritime professionals accountable for every stage of
+            your operation — from first enquiry to final sailing.
+          </p>
         </div>
         <div className="about-leadership-grid">
           {leaders.map((l) => (
             <article key={l.role}>
-              <div className="leadership-avatar"><FaCircleUser /></div>
+              <span className="leadership-monogram">{l.initials}</span>
               <h3>{l.role}</h3>
+              <p>{l.remit}</p>
             </article>
           ))}
         </div>
