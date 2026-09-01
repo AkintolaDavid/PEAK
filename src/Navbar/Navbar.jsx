@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { CgMenuRight } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
-import top from "../Header/TOP.png";
+import top from "../Header/logo.png";
 import "./Navbar.css";
 
 const links = [

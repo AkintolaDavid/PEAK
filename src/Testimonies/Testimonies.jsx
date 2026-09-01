@@ -1,20 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaCheck, FaClock, FaRoute, FaHeadset, FaShip, FaAnchor, FaBoxesPacking, FaPeopleCarryBox } from "react-icons/fa6";
+import { FaArrowRight, FaCheck, FaClock, FaRoute, FaHeadset, FaShip, FaAnchor, FaBoxesPacking } from "react-icons/fa6";
 import "./Testimonies.css";
 
 const services = [
   { icon: <FaShip/>, title: "Shipping agency", text: "Full agency representation from pre-arrival to final sailing." },
   { icon: <FaAnchor/>, title: "Marine & offshore support", text: "Offshore, jetty and ship-to-ship transfer operations." },
   { icon: <FaBoxesPacking/>, title: "Logistics & customs clearing", text: "End-to-end clearing that keeps cargo moving." },
-  { icon: <FaPeopleCarryBox/>, title: "Crew change", text: "Fast, well-coordinated crew changes at every port." },
 ];
 
 export const Testimonies = () => (
   <>
     <section className="what-we-do">
       <p className="section-label">What we do</p>
-      <h2>Four ways we keep your operation moving</h2>
+      <h2>Three ways we keep your operation moving</h2>
       <div className="what-we-do-grid">
         {services.map((s) => (
           <div key={s.title}>
