@@ -1,14 +1,14 @@
 .maintenance_container{background:#EEF0FA;padding:100px max(24px,calc((100% - 1180px)/2)) 110px}
 .pillar-intro{display:flex;justify-content:space-between;align-items:flex-end;gap:56px;margin-bottom:52px}
 .pillar-intro>div{max-width:540px}
-.pillar-intro h2{font-family:'Manrope',sans-serif;font-size:clamp(34px,4vw,50px);line-height:1.06;letter-spacing:-.035em;color:#010F70;margin:0}
+.pillar-intro h2{font-family:'Space Grotesk','Inter',sans-serif;font-size:clamp(34px,4vw,50px);line-height:1.06;letter-spacing:-.035em;color:#010F70;margin:0}
 .pillar-intro>p{max-width:360px;color:#5B6472;line-height:1.75;font-size:15px;margin:0 0 8px;padding-left:22px;border-left:3px solid #CB3800}
 .coreareas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .coreareas article{background:#fff;border:1px solid #E1E4F5;border-top:3px solid transparent;border-radius:14px;padding:36px 32px 38px;position:relative;overflow:hidden;transition:transform .25s ease,border-top-color .25s ease,box-shadow .25s ease;box-shadow:0 10px 30px rgba(5,47,57,.05)}
 .coreareas article:hover{transform:translateY(-6px);border-top-color:#CB3800;box-shadow:0 20px 46px rgba(5,47,57,.12)}
-.pillar-number{position:absolute;right:24px;top:14px;font-family:'Manrope',sans-serif;font-size:54px;font-weight:800;line-height:1;letter-spacing:-.04em;color:#EDF0FB}
+.pillar-number{position:absolute;right:24px;top:14px;font-family:'Space Grotesk','Inter',sans-serif;font-size:54px;font-weight:800;line-height:1;letter-spacing:-.04em;color:#EDF0FB}
 .pillar-icon{position:relative;width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:#010F70;color:#fff;font-size:22px;margin-bottom:24px}
-.coreareas h3{text-transform:capitalize;font-family:'Manrope',sans-serif;color:#010F70;font-size:21px;margin:0 0 12px}
+.coreareas h3{text-transform:capitalize;font-family:'Space Grotesk','Inter',sans-serif;color:#010F70;font-size:21px;margin:0 0 12px}
 .coreareas p{position:relative;color:#5B6472;line-height:1.75;font-size:14.5px;margin:0}
 @media(max-width:900px){.pillar-intro{flex-direction:column;gap:20px}.pillar-intro>p{max-width:520px}}
 @media(max-width:760px){.maintenance_container{padding:78px 18px}.coreareas{grid-template-columns:1fr;margin-top:34px}.coreareas article{padding:30px}}

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { CgMenuRight } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
-import top from "../Header/logo.png";
+import logoLight from "../Header/logo-light.svg";
+import logoDark from "../Header/logo.svg";
 import "./Navbar.css";
 
 const links = [
@@ -12,14 +13,25 @@ const links = [
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { pathname } = useLocation();
+
   useEffect(() => setOpen(false), [pathname]);
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 32);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const solid = scrolled || open;
+
   return (
-    <header className="site-nav">
+    <header className={solid ? "site-nav is-solid" : "site-nav"}>
       <div className="nav-inner">
         <Link to="/" className="brand" aria-label="Peak Shipping Agency home">
-          <img src={top} alt="Peak Shipping Agency" />
+          <img src={solid ? logoDark : logoLight} alt="Peak Shipping Agency" />
         </Link>
         <nav className={open ? "nav-links is-open" : "nav-links"} aria-label="Primary navigation">
           {links.map(([to, label]) => (

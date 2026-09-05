@@ -3,7 +3,7 @@
 .contact-hero-content{position:relative;z-index:2;width:min(1180px,calc(100% - 48px));margin:0 auto;padding:140px 0 56px}
 .contact-hero-content .eyebrow{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#CBD1F2;display:flex;align-items:center;gap:12px;margin:0 0 18px}
 .contact-hero-content .eyebrow span{display:inline-block;width:34px;height:2px;background:#CB3800}
-.contact-hero-content h1{font-family:'Manrope',sans-serif;font-size:clamp(36px,5vw,58px);letter-spacing:-.03em;margin:0 0 14px}
+.contact-hero-content h1{font-family:'Space Grotesk','Inter',sans-serif;font-size:clamp(36px,5vw,58px);letter-spacing:-.03em;margin:0 0 14px}
 .contact-hero-content p{max-width:560px;font-size:16px;line-height:1.6;color:#CBD1F2;margin:0}
 
 .ContactUscontainer{background:#EEF0FA;display:flex;justify-content:center;padding:60px max(16px,calc((100% - 1180px)/2)) 100px}
@@ -11,7 +11,7 @@
 .contactusinformation{position:relative;padding:48px;display:flex;flex-direction:column;gap:20px;font-weight:600;background:linear-gradient(165deg,#010F70,#000A4D);color:#fff}
 .contactusinformation:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 12%,rgba(255,90,31,.22),transparent 45%);pointer-events:none}
 .contactusinformation>*{position:relative;z-index:1}
-.contactusinfo-title{font-family:'Manrope',sans-serif;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#FF5A1F;margin:0 0 2px}
+.contactusinfo-title{font-family:'Space Grotesk','Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#FF5A1F;margin:0 0 2px}
 .contactusinformation div{display:flex;align-items:center;gap:16px}
 .contactusinformation span{font-size:15.5px;line-height:1.5}
 .contactusinformationicon{font-size:22px;color:#FF5A1F;flex-shrink:0}

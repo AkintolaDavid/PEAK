@@ -4,50 +4,109 @@
 .ports-hero-content{position:relative;z-index:2;width:min(1180px,calc(100% - 48px));margin:0 auto;padding:145px 0 64px}
 .ports-hero-content .eyebrow{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#CBD1F2;display:flex;align-items:center;gap:12px;margin:0 0 18px}
 .ports-hero-content .eyebrow span{display:inline-block;width:34px;height:2px;background:#CB3800}
-.ports-hero-content h1{font-family:'Manrope',sans-serif;font-size:clamp(36px,5vw,58px);letter-spacing:-.03em;margin:0 0 16px}
+.ports-hero-content h1{font-family:'Space Grotesk','Inter',sans-serif;font-size:clamp(36px,5vw,58px);letter-spacing:-.03em;margin:0 0 16px}
 .ports-hero-content p{max-width:620px;font-size:17px;line-height:1.65;color:#CBD1F2;margin:0}
+
+/* Operations timeline */
+.operations-section{background:#fff;padding:88px max(20px,calc((100% - 1180px)/2)) 96px}
+.operations-container{max-width:1180px;margin:0 auto}
+.eyebrow-dark{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#CB3800;display:flex;align-items:center;gap:12px;margin:0 0 18px}
+.eyebrow-dark span{display:inline-block;width:34px;height:2px;background:#CB3800}
+.operations-container h2{font-family:'Space Grotesk','Inter',sans-serif;font-size:clamp(28px,3.6vw,42px);letter-spacing:-.025em;color:#010F70;margin:0 0 16px;max-width:720px}
+.operations-intro{font-size:16px;line-height:1.7;color:#5B6472;max-width:680px;margin:0 0 52px}
+
+.operations-scroller{display:grid;grid-template-columns:minmax(0,480px) 1fr;gap:64px;align-items:start}
+
+.operations-sticky{position:sticky;top:104px}
+.operations-sticky-media{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 16px 40px rgba(1,15,112,.1);height:440px;background:#EEF0FA}
+.operations-sticky-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .5s ease}
+.operations-sticky-media img.is-active{opacity:1}
+
+.operations-steps{display:flex;flex-direction:column}
+.operations-step-text{padding:15vh 0;opacity:.32;transition:opacity .35s ease}
+.operations-step-text.is-active{opacity:1}
+.operations-step-index{font-family:'Space Grotesk','Inter',sans-serif;font-size:14px;font-weight:700;color:#CB3800;letter-spacing:.08em;margin:0 0 10px;display:block}
+.operations-step-text h3{font-family:'Space Grotesk','Inter',sans-serif;font-size:24px;line-height:1.3;color:#010F70;margin:0 0 14px}
+.operations-step-text p{font-size:16px;line-height:1.75;color:#5B6472;margin:0;max-width:440px}
 
 /* Grid */
 .ports-container{background:#EEF0FA;padding:72px max(20px,calc((100% - 1180px)/2)) 92px}
+.ports-section-eyebrow{margin:0 0 18px}
+.ports-section-heading{font-family:'Space Grotesk','Inter',sans-serif;font-size:clamp(26px,3.2vw,36px);letter-spacing:-.025em;color:#010F70;margin:0 0 34px}
 .ports-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
 
-.port-card{background:#fff;border:1px solid #E1E4F5;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease;box-shadow:0 10px 30px rgba(1,15,112,.05)}
-.port-card:not(.is-open):hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(1,15,112,.12)}
+.port-card{background:#fff;border:1px solid #E1E4F5;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease}
+.port-card{box-shadow:0 10px 30px rgba(1,15,112,.05)}
+.port-card:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(1,15,112,.12)}
 
 .port-card-media{overflow:hidden}
-.port-card-media img{width:100%;height:200px;object-fit:cover;display:block;transition:transform .35s ease}
-.port-card:not(.is-open):hover .port-card-media img{transform:scale(1.04)}
+.port-card-media img{width:100%;height:210px;object-fit:cover;display:block;transition:transform .35s ease}
+.port-card:hover .port-card-media img{transform:scale(1.04)}
 
 .port-card-body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
 .port-card-state{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#CB3800;margin:0 0 8px}
-.port-card-body h2{font-family:'Manrope',sans-serif;font-size:19px;line-height:1.25;color:#010F70;margin:0 0 12px}
-.port-card-blurb{font-size:14px;line-height:1.65;color:#5B6472;margin:0 0 18px;flex:1}
-.port-card-toggle{align-self:flex-start;display:inline-flex;align-items:center;gap:9px;background:#EEF0FA;color:#010F70;border:0;border-radius:8px;padding:11px 16px;font-family:inherit;font-size:13px;font-weight:700;cursor:pointer;transition:background .2s ease,color .2s ease}
+.port-card-body h2{font-family:'Space Grotesk','Inter',sans-serif;font-size:19px;line-height:1.25;color:#010F70;margin:0 0 12px}
+.port-card-blurb{font-size:14px;line-height:1.65;color:#5B6472;margin:0;flex:1}
+.port-card-toggle{align-self:flex-start;margin-top:18px;display:inline-flex;align-items:center;gap:9px;background:#EEF0FA;color:#010F70;border:0;border-radius:8px;padding:12px 18px;font-family:inherit;font-size:13px;font-weight:700;cursor:pointer;transition:background .2s ease,color .2s ease,gap .2s ease}
+.port-card-toggle svg{font-size:12px;transition:transform .2s ease}
 .port-card-toggle:hover{background:#010F70;color:#fff}
-.port-card-toggle svg{transition:transform .25s ease;font-size:12px}
-.port-card.is-open .port-card-toggle{background:#CB3800;color:#fff}
-.port-card.is-open .port-card-toggle svg{transform:rotate(180deg)}
+.port-card-toggle:hover svg{transform:translateX(3px)}
 
-.port-card.is-open{box-shadow:0 22px 50px rgba(1,15,112,.16);border-color:#CB3800}
+/* Activities modal */
+.port-modal-backdrop{position:fixed;inset:0;z-index:300;background:rgba(1,10,60,.55);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);display:flex;align-items:flex-start;justify-content:center;padding:6vh 24px;overflow-y:auto;animation:portFade .2s ease}
+.port-modal{position:relative;background:#fff;border-radius:20px;width:min(1040px,100%);box-shadow:0 40px 110px rgba(1,10,60,.45);overflow:hidden;animation:portRise .3s cubic-bezier(.2,.8,.2,1)}
+@keyframes portFade{from{opacity:0}to{opacity:1}}
+@keyframes portRise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
 
-.port-activities{display:flex;flex-direction:column;gap:12px;padding:4px 20px 24px}
-.port-activities-label{margin:0 0 2px;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#CB3800}
-.port-activities figure{position:relative;margin:0;border-radius:10px;overflow:hidden}
-.port-activities img{width:100%;height:118px;object-fit:cover;display:block}
-.port-activities figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 11px;background:linear-gradient(transparent,rgba(1,15,112,.9));color:#fff;font-size:12px;font-weight:650;letter-spacing:.01em}
+.port-modal-close{position:absolute;top:18px;right:18px;z-index:3;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#010F70;font-size:20px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 20px rgba(1,10,60,.18);transition:background .2s ease,color .2s ease,transform .2s ease}
+.port-modal-close:hover{background:#CB3800;color:#fff;transform:rotate(90deg)}
+
+.port-modal-head{padding:42px 46px 24px}
+.port-modal-head .port-card-state{margin:0 0 10px}
+.port-modal-head h2{font-family:'Space Grotesk','Inter',sans-serif;font-size:clamp(26px,3.4vw,40px);letter-spacing:-.025em;color:#010F70;margin:0 0 14px;line-height:1.1}
+.port-modal-head p{font-size:15px;line-height:1.72;color:#5B6472;margin:0;max-width:700px}
+
+.port-modal-label{margin:0;padding:0 46px 18px;font-size:12px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#CB3800}
+
+.port-modal-activities{display:flex;flex-direction:column;gap:16px;padding:0 24px}
+.port-modal-activities figure{position:relative;margin:0;border-radius:14px;overflow:hidden}
+.port-modal-activities img{width:100%;height:380px;object-fit:cover;display:block}
+.port-modal-activities figcaption{position:absolute;left:0;right:0;bottom:0;padding:52px 28px 20px;background:linear-gradient(transparent,rgba(1,10,60,.92));color:#fff;font-family:'Space Grotesk','Inter',sans-serif;font-size:18px;font-weight:600;letter-spacing:.01em}
+
+.port-modal-foot{padding:26px 24px 30px;display:flex;justify-content:center}
+.port-modal-foot a{display:inline-flex;align-items:center;gap:10px;background:#CB3800;color:#fff;padding:15px 26px;border-radius:9px;text-decoration:none;font-weight:700;font-size:14px;transition:background .2s ease}
+.port-modal-foot a:hover{background:#FF5A1F}
 
 /* CTA */
 .ports-cta{background:#010F70;color:#fff;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding:56px max(20px,calc((100% - 1180px)/2))}
 .ports-cta p{font-size:12px;font-weight:700;letter-spacing:.14em;color:#CBD1F2;margin:0 0 8px}
-.ports-cta h2{font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,34px);margin:0;max-width:640px}
+.ports-cta h2{font-family:'Space Grotesk','Inter',sans-serif;font-size:clamp(24px,3vw,34px);margin:0;max-width:640px}
 .ports-cta a{display:inline-flex;align-items:center;gap:10px;background:#CB3800;color:#fff;padding:15px 24px;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap}
 .ports-cta a:hover{background:#FF5A1F}
 
 @media(max-width:900px){
   .ports-grid{grid-template-columns:1fr 1fr}
+  .operations-scroller{grid-template-columns:1fr;gap:0}
+  .operations-sticky{position:sticky;top:88px;z-index:2;order:1;padding-bottom:18px;background:#fff}
+  .operations-steps{order:2}
+  .operations-sticky-media{height:260px}
+  .operations-step-text{padding:8vh 0}
+  .operations-step-text p{max-width:none}
 }
-@media(max-width:620px){
+@media(max-width:640px){
   .ports-hero{min-height:52vh}
   .ports-grid{grid-template-columns:1fr}
-  .port-activities img{height:150px}
+  .operations-section{padding:64px max(20px,calc((100% - 1180px)/2)) 72px}
+  .operations-intro{margin-bottom:36px}
+  .operations-sticky{top:76px}
+  .operations-sticky-media{height:210px}
+  .operations-step-text{padding:7vh 0}
+  .port-modal-backdrop{padding:0}
+  .port-modal{border-radius:0;min-height:100%;width:100%}
+  .port-modal-head{padding:64px 22px 18px}
+  .port-modal-label{padding:0 22px 14px}
+  .port-modal-activities{padding:0 14px}
+  .port-modal-activities img{height:240px}
+  .port-modal-activities figcaption{font-size:16px;padding:44px 20px 16px}
+  .port-modal-close{top:14px;right:14px;width:40px;height:40px}
 }

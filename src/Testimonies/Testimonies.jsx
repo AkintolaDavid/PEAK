@@ -29,7 +29,6 @@ export const Testimonies = () => (
       <div className="difference-copy">
         <p className="section-label">The Peak difference</p>
         <h2>Your operation never stops.<br/>Neither do we.</h2>
-        <p>From pre-arrival planning to final sailing, our team coordinates every detail so your vessel spends less time waiting and more time moving.</p>
         <ul>
           <li><FaCheck/> One accountable point of contact</li><li><FaCheck/> Fast, transparent communication</li>
           <li><FaCheck/> Proven local regulatory knowledge</li><li><FaCheck/> Round-the-clock operational support</li>
@@ -44,6 +43,5 @@ export const Testimonies = () => (
         </div>
       </div>
     </section>
-    <section className="home-cta"><div><p>READY WHEN YOU ARE</p><h2>Let’s move your operation forward.</h2><div className="cta-points"><span><FaCheck/> Quick response</span><span><FaCheck/> Local port expertise</span><span><FaCheck/> 24/7 support</span></div></div><Link to="/contact">Start a conversation <FaArrowRight/></Link></section>
   </>
 );

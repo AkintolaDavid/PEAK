@@ -1,6 +1,6 @@
 import { React } from "react";
 import { useEffect } from "react";
-import top2 from "../Header/TOP.png";
+import top2 from "../Header/logo.svg";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";

@@ -6,7 +6,7 @@ import { Webring } from "../Webring/Webring";
 import { Testimonies } from "../Testimonies/Testimonies";
 import { usePageMeta } from "../usePageMeta";
 import heroVideo from "../assets/herosectionvideo.mp4";
-import heroPoster from "./hero.jpg";
+import heroPoster from "../assets/hero-poster.jpg";
 
 const Header = () => {
   usePageMeta(

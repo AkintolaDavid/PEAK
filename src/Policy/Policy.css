@@ -2,10 +2,10 @@
 .policymaincontainer{background:#EEF0FA;display:flex;justify-content:center;padding:60px max(16px,calc((100% - 940px)/2)) 90px}
 @media(max-width:850px){.policy-topbar{height:76px}}
 .policycontainer{background:#fff;width:min(940px,100%);padding:clamp(28px,5vw,55px);border-radius:10px;box-shadow:0 10px 35px rgba(1,15,112,.08);display:flex;flex-direction:column}
-.policyheader{color:#010F70;font-family:'Manrope',sans-serif;font-size:clamp(24px,3.4vw,38px);font-weight:700;margin:28px 0 18px}
+.policyheader{color:#010F70;font-family:'Space Grotesk','Inter',sans-serif;font-size:clamp(24px,3.4vw,38px);font-weight:700;margin:28px 0 18px}
 .policyheader:first-child{margin-top:0}
 .policytextcontainer{display:flex;flex-direction:column;gap:16px;margin-bottom:6px}
 .policytext{display:block;font-size:clamp(14px,1.6vw,16px);line-height:1.7;color:#5B6472}
-.policysubheader,.policysubheaderterm{display:block;font-family:'Manrope',sans-serif;color:#010F70;font-size:clamp(18px,2.4vw,22px);font-weight:700;margin:20px 0 10px}
+.policysubheader,.policysubheaderterm{display:block;font-family:'Space Grotesk','Inter',sans-serif;color:#010F70;font-size:clamp(18px,2.4vw,22px);font-weight:700;margin:20px 0 10px}
 .policylicense,.policydisclaimer{display:flex;flex-direction:column;gap:14px;margin:6px 0}
 .policylicenseroman{display:flex;flex-direction:column;gap:6px;margin:4px 0 0}
