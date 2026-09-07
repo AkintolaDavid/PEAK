@@ -4,6 +4,7 @@ import { FaArrowRight, FaAnchor, FaShip, FaGlobeAfrica } from "react-icons/fa";
 import { Navbar } from "../Navbar/Navbar";
 import { Webring } from "../Webring/Webring";
 import { Testimonies } from "../Testimonies/Testimonies";
+import { Visit } from "../Visit/Visit";
 import { usePageMeta } from "../usePageMeta";
 import heroVideo from "../assets/herosectionvideo.mp4";
 import heroPoster from "../assets/hero-poster.jpg";
@@ -48,6 +49,7 @@ const Header = () => {
     </div>
     <Webring />
     <Testimonies />
+    <Visit />
   </>
   );
 };

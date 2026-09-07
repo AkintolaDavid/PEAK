@@ -1,34 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import storyImg from "./staff2.png";
+import teamImg from "./team.jpg";
 import bckimg from "./about-hero.jpg";
 import { FaArrowRight, FaHandshake, FaEarthAfrica, FaUserGraduate } from "react-icons/fa6";
 import "./Aboutus.css";
 import { Navbar } from "../Navbar/Navbar";
 import { usePageMeta } from "../usePageMeta";
-
-const leaders = [
-  {
-    role: "Managing Director",
-    initials: "MD",
-    remit: "Sets company direction and owns principal client relationships.",
-  },
-  {
-    role: "Director of Operations",
-    initials: "DO",
-    remit: "Runs day-to-day vessel coordination across every port call.",
-  },
-  {
-    role: "Head of Marine Services",
-    initials: "MS",
-    remit: "Leads offshore, jetty and ship-to-ship transfer operations.",
-  },
-  {
-    role: "Head of Logistics",
-    initials: "HL",
-    remit: "Oversees customs clearing, haulage and cargo movement.",
-  },
-];
 
 const pillars = [
   {
@@ -74,18 +52,13 @@ export const Aboutus = () => {
         <img src={storyImg} className="about-story-img" alt="Peak Shipping Agency staff reviewing vessel documentation" />
         <div className="about-story-copy">
           <p className="section-label">Who we are</p>
-          <h2>A single point of contact, from arrival to sailing.</h2>
+          <h2>One point of contact, from arrival to sailing.</h2>
           <p>
             PEAK Shipping Agency Limited has supported ship owners, managers
             and charterers along the West African coast since 2007. Based in
             Apapa, Lagos, we coordinate shipping agency, marine and logistics
             operations end to end — so our clients spend less time waiting
             and more time moving.
-          </p>
-          <p>
-            We pair on-the-ground knowledge of Nigerian ports and regulations
-            with responsive, transparent communication at every stage, so
-            clients always know where their operation stands.
           </p>
         </div>
       </section>
@@ -115,15 +88,10 @@ export const Aboutus = () => {
             your operation — from first enquiry to final sailing.
           </p>
         </div>
-        <div className="about-leadership-grid">
-          {leaders.map((l) => (
-            <article key={l.role}>
-              <span className="leadership-monogram">{l.initials}</span>
-              <h3>{l.role}</h3>
-              <p>{l.remit}</p>
-            </article>
-          ))}
-        </div>
+        <figure className="about-team-photo">
+          <img src={teamImg} alt="The Peak Shipping Agency team" />
+          <figcaption>The people behind every Peak port call.</figcaption>
+        </figure>
       </section>
 
       <section className="about-cta">

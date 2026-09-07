@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaCheck, FaClock, FaRoute, FaHeadset, FaShip, FaAnchor, FaBoxesPacking } from "react-icons/fa6";
+import { FaArrowRight, FaShip, FaAnchor, FaBoxesPacking } from "react-icons/fa6";
 import "./Testimonies.css";
 
 const services = [
@@ -25,23 +25,6 @@ export const Testimonies = () => (
       </div>
       <Link to="/services" className="text-link">See all services <FaArrowRight/></Link>
     </section>
-    <section className="difference-section">
-      <div className="difference-copy">
-        <p className="section-label">The Peak difference</p>
-        <h2>Your operation never stops.<br/>Neither do we.</h2>
-        <ul>
-          <li><FaCheck/> One accountable point of contact</li><li><FaCheck/> Fast, transparent communication</li>
-          <li><FaCheck/> Proven local regulatory knowledge</li><li><FaCheck/> Round-the-clock operational support</li>
-        </ul>
-        <Link to="/services" className="text-link">See how we can help <FaArrowRight/></Link>
-      </div>
-      <div className="difference-image">
-        <div className="operation-card">
-          <p><FaClock/><span><b>24 / 7</b> Vessel assistance</span></p>
-          <p><FaRoute/><span><b>End-to-end</b> Port coordination</span></p>
-          <p><FaHeadset/><span><b>One team</b> Always within reach</span></p>
-        </div>
-      </div>
-    </section>
+    {/* "The Peak difference" section hidden for now */}
   </>
 );

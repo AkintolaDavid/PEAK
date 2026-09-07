@@ -19,3 +19,8 @@ attribution required — listed here as good practice).
 `Ports/jetty-wide.jpg` and `Ports/tanker-bow.jpg` are the client's own
 photographs (vessel operations at a Nigerian jetty), colour-corrected and
 cropped for the site.
+
+`Aboutus/team.jpg` and `Visit/reception.jpg` are the client's own images
+(staff portrait and headquarters reception), compressed and resized for the
+site. `public/favicon.*` and `public/logo*.png` are generated from the Peak
+logo mark in `Header/logo.svg`.
