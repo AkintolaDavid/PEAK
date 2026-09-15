@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaXmark, FaLocationDot } from "react-icons/fa6";
+import { FaArrowRight, FaXmark, FaLocationDot, FaChevronLeft, FaChevronRight, FaImages } from "react-icons/fa6";
 import { Navbar } from "../Navbar/Navbar";
 import { usePageMeta } from "../usePageMeta";
 import "./Ports.css";
@@ -12,6 +12,11 @@ import supplyVessel from "./supply-vessel.jpg";
 import portOnne from "./port-onne.jpg";
 import portRivers from "./port-rivers.jpg";
 import portCalabar from "./port-calabar.jpg";
+
+import calabarGallery1 from "./calabar-gallery/calabar-1.jpg";
+import calabarGallery2 from "./calabar-gallery/calabar-2.jpg";
+import calabarGallery3 from "./calabar-gallery/calabar-3.jpg";
+import calabarGallery4 from "./calabar-gallery/calabar-4.jpg";
 
 import transferImg from "../Services/transfer.jpg";
 import towingImg from "../Services/towing.jpg";
@@ -133,6 +138,7 @@ const ports = [
     blurb:
       "A river port reached by a long dredged channel, handling bulk, containers and project cargo with Peak's pilotage coordination.",
     activities: ["channel", "berth", "cargo"],
+    gallery: [calabarGallery1, calabarGallery2, calabarGallery3, calabarGallery4],
   },
 ];
 
@@ -143,6 +149,10 @@ export const Ports = () => {
   );
   const [activePort, setActivePort] = useState(null);
   const close = useCallback(() => setActivePort(null), []);
+
+  const [galleryFor, setGalleryFor] = useState(null);
+  const [galleryIndex, setGalleryIndex] = useState(0);
+  const closeGallery = useCallback(() => setGalleryFor(null), []);
 
   const [activeStep, setActiveStep] = useState(0);
   const stepRefs = useRef([]);
@@ -175,7 +185,24 @@ export const Ports = () => {
     };
   }, [activePort, close]);
 
+  useEffect(() => {
+    if (galleryFor === null) return undefined;
+    const images = ports[galleryFor].gallery;
+    const onKey = (e) => {
+      if (e.key === "Escape") closeGallery();
+      if (e.key === "ArrowRight") setGalleryIndex((i) => (i + 1) % images.length);
+      if (e.key === "ArrowLeft") setGalleryIndex((i) => (i - 1 + images.length) % images.length);
+    };
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [galleryFor, closeGallery]);
+
   const port = activePort !== null ? ports[activePort] : null;
+  const galleryPort = galleryFor !== null ? ports[galleryFor] : null;
 
   return (
     <>
@@ -261,6 +288,29 @@ export const Ports = () => {
                 </p>
                 <h2>{p.name}</h2>
                 <p className="port-card-blurb">{p.blurb}</p>
+                {p.gallery && (
+                  <div className="port-card-gallery">
+                    <p className="port-card-gallery-label">
+                      <FaImages /> From our team on the ground
+                    </p>
+                    <div className="port-card-gallery-strip">
+                      {p.gallery.map((src, gi) => (
+                        <button
+                          type="button"
+                          key={gi}
+                          className="port-card-gallery-thumb"
+                          onClick={() => {
+                            setGalleryFor(i);
+                            setGalleryIndex(gi);
+                          }}
+                          aria-label={`View photo ${gi + 1} from ${p.name}`}
+                        >
+                          <img src={src} alt="" loading="lazy" />
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 {SHOW_ACTIVITIES && (
                   <button
                     type="button"
@@ -331,6 +381,55 @@ export const Ports = () => {
               </Link>
             </div>
           </div>
+        </div>
+      )}
+
+      {galleryPort && (
+        <div
+          className="gallery-lightbox-backdrop"
+          onClick={closeGallery}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${galleryPort.name} — photo gallery`}
+        >
+          <button
+            type="button"
+            className="port-modal-close gallery-lightbox-close"
+            onClick={closeGallery}
+            aria-label="Close"
+          >
+            <FaXmark />
+          </button>
+          <button
+            type="button"
+            className="gallery-lightbox-nav gallery-lightbox-prev"
+            onClick={(e) => {
+              e.stopPropagation();
+              setGalleryIndex(
+                (i) => (i - 1 + galleryPort.gallery.length) % galleryPort.gallery.length
+              );
+            }}
+            aria-label="Previous photo"
+          >
+            <FaChevronLeft />
+          </button>
+          <figure className="gallery-lightbox-figure" onClick={(e) => e.stopPropagation()}>
+            <img src={galleryPort.gallery[galleryIndex]} alt={`${galleryPort.name} ${galleryIndex + 1}`} />
+            <figcaption>
+              {galleryIndex + 1} / {galleryPort.gallery.length}
+            </figcaption>
+          </figure>
+          <button
+            type="button"
+            className="gallery-lightbox-nav gallery-lightbox-next"
+            onClick={(e) => {
+              e.stopPropagation();
+              setGalleryIndex((i) => (i + 1) % galleryPort.gallery.length);
+            }}
+            aria-label="Next photo"
+          >
+            <FaChevronRight />
+          </button>
         </div>
       )}
     </>

@@ -1,15 +1,11 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import transfer from "./transfer.jpg";
 import towing from "./towing.jpg";
 import crew from "./crew.jpg";
-import canal from "./canal.jpg";
 import jetty from "./jetty.png";
-import logistics from "./logistics.jpg";
 import offshore from "./offshore-hd.png";
 import servicesHero from "../Header/hero.jpg";
-import shiplogo from "../Header/ship.jpg";
-import sailors from "../Contact/sailors.jpg";
 import { FaArrowRight } from "react-icons/fa6";
 import "./Services.css";
 import { Navbar } from "../Navbar/Navbar";
@@ -40,11 +36,6 @@ const groups = [
     name: "Logistics",
     items: [
       {
-        img: logistics,
-        title: "Custom clearing",
-        text: "End-to-end clearing support that keeps cargo moving through Nigerian ports without unnecessary delay or cost.",
-      },
-      {
         img: crew,
         title: "Crew change",
         text: "Fast, well-coordinated crew changes with attention to documentation, immigration and vessel schedules.",
@@ -56,33 +47,72 @@ const groups = [
       },
     ],
   },
-  {
-    name: "Shipping",
-    items: [
-      {
-        img: shiplogo,
-        title: "Shipping agency",
-        text: "Full shipping agency representation for vessels calling at Nigerian ports, from pre-arrival planning to final sailing.",
-      },
-      {
-        img: sailors,
-        title: "Bunkering / fresh water supplies",
-        text: "Dependable bunkering and fresh water supply, coordinated to fit tight port turnaround windows.",
-      },
-      {
-        img: canal,
-        title: "Canal transit services",
-        text: "Transit planning and coordination that keeps vessels compliant and on schedule.",
-      },
-    ],
-  },
 ];
+
+const RevealCard = ({ item, index }) => {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return undefined;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className={"service-card" + (visible ? " is-visible" : "")}
+      style={{ transitionDelay: `${(index % 3) * 90}ms` }}
+    >
+      <img src={item.img} className="area_img" alt={item.title} />
+      <h2>{item.title}</h2>
+      <span className="area_img_span">{item.text}</span>
+    </div>
+  );
+};
 
 export const Services = () => {
   usePageMeta(
     "Services",
-    "Shipping agency, marine and offshore support, and logistics services — from pre-arrival planning and jetty operations to customs clearing, crew change and canal transit."
+    "Shipping agency, marine and offshore support, and logistics services — jetty operations, ship-to-ship transfer, crew change and towage."
   );
+
+  const [activeGroup, setActiveGroup] = useState(groups[0].name);
+  const groupRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveGroup(entry.target.dataset.group);
+          }
+        });
+      },
+      { rootMargin: "-40% 0px -50% 0px", threshold: 0 }
+    );
+    groupRefs.current.forEach((el) => el && observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToGroup = (name) => {
+    const el = groupRefs.current.find((g) => g && g.dataset.group === name);
+    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <>
       <Navbar />
@@ -92,23 +122,39 @@ export const Services = () => {
           <p className="eyebrow"><span /> What we do</p>
           <h1>Our services</h1>
           <p>
-            PEAK Shipping Agency Limited offers a full range of services grouped
-            into three areas: Shipping, Marine and Logistics.
+            PEAK Shipping Agency Limited offers a full range of marine and
+            logistics services built around every vessel call.
           </p>
         </div>
       </section>
 
+      <nav className="services-jumpnav">
+        <div className="services-jumpnav-track">
+          {groups.map((group) => (
+            <button
+              type="button"
+              key={group.name}
+              className={"services-jumpnav-pill" + (activeGroup === group.name ? " is-active" : "")}
+              onClick={() => scrollToGroup(group.name)}
+            >
+              {group.name}
+            </button>
+          ))}
+        </div>
+      </nav>
+
       <div className="servicecontainer">
-        {groups.map((group) => (
-          <div className="servicefirstcontent" key={group.name}>
+        {groups.map((group, gi) => (
+          <div
+            className="servicefirstcontent"
+            key={group.name}
+            ref={(el) => (groupRefs.current[gi] = el)}
+            data-group={group.name}
+          >
             <div className="servicefirst">{group.name}</div>
             <div className="serviceareas">
-              {group.items.map((item) => (
-                <div className="service-card" key={item.title}>
-                  <img src={item.img} className="area_img" alt={item.title} />
-                  <h2>{item.title}</h2>
-                  <span className="area_img_span">{item.text}</span>
-                </div>
+              {group.items.map((item, i) => (
+                <RevealCard item={item} index={i} key={item.title} />
               ))}
             </div>
           </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import storyImg from "./staff2.png";
-import teamImg from "./team.jpg";
 import bckimg from "./about-hero.jpg";
 import { FaArrowRight, FaHandshake, FaEarthAfrica, FaUserGraduate } from "react-icons/fa6";
 import "./Aboutus.css";
@@ -79,20 +78,7 @@ export const Aboutus = () => {
         </div>
       </section>
 
-      <section className="about-leadership">
-        <div className="about-leadership-head">
-          <p className="section-label">Leadership</p>
-          <h2>The team steering Peak</h2>
-          <p>
-            Experienced maritime professionals accountable for every stage of
-            your operation — from first enquiry to final sailing.
-          </p>
-        </div>
-        <figure className="about-team-photo">
-          <img src={teamImg} alt="The Peak Shipping Agency team" />
-          <figcaption>The people behind every Peak port call.</figcaption>
-        </figure>
-      </section>
+      {/* Leadership section hidden for now */}
 
       <section className="about-cta">
         <div>

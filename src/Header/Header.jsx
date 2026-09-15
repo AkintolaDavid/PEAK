@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaArrowRight, FaAnchor, FaShip, FaGlobeAfrica } from "react-icons/fa";
 import { Navbar } from "../Navbar/Navbar";
 import { Webring } from "../Webring/Webring";
-import { Testimonies } from "../Testimonies/Testimonies";
+import { Journey } from "../Journey/Journey";
 import { Visit } from "../Visit/Visit";
 import { usePageMeta } from "../usePageMeta";
 import heroVideo from "../assets/herosectionvideo.mp4";
@@ -33,7 +33,7 @@ const Header = () => {
         <div className="hero-shade" />
         <div className="hero-content">
           <p className="eyebrow"><span /> Trusted maritime partners since 2007</p>
-          <h1>Your cargo. Our commitment. <em>Every port.</em></h1>
+          <h1>Your vessel. Our commitment. <em>Every port.</em></h1>
           <p className="hero-copy">Reliable shipping agency, marine and logistics support across Nigeria and the West African coast.</p>
           <div className="hero-actions">
             <Link to="/services" className="button primary">Explore our services <FaArrowRight /></Link>
@@ -48,7 +48,7 @@ const Header = () => {
       </section>
     </div>
     <Webring />
-    <Testimonies />
+    <Journey />
     <Visit />
   </>
   );

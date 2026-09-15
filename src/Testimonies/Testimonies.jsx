@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaShip, FaAnchor, FaBoxesPacking } from "react-icons/fa6";
+import shipImg from "../Header/ship.jpg";
+import offshoreImg from "../Services/offshore.jpg";
+import logisticsImg from "../Services/logistics.jpg";
 import "./Testimonies.css";
 
 const services = [
-  { icon: <FaShip/>, title: "Shipping agency", text: "Full agency representation from pre-arrival to final sailing." },
-  { icon: <FaAnchor/>, title: "Marine & offshore support", text: "Offshore, jetty and ship-to-ship transfer operations." },
-  { icon: <FaBoxesPacking/>, title: "Logistics & customs clearing", text: "End-to-end clearing that keeps cargo moving." },
+  { icon: <FaShip/>, img: shipImg, title: "Shipping agency", text: "Full agency representation from pre-arrival to final sailing." },
+  { icon: <FaAnchor/>, img: offshoreImg, title: "Marine & offshore support", text: "Offshore, jetty and ship-to-ship transfer operations." },
+  { icon: <FaBoxesPacking/>, img: logisticsImg, title: "Logistics & customs clearing", text: "End-to-end clearing that keeps cargo moving." },
 ];
 
 export const Testimonies = () => (
@@ -17,7 +20,7 @@ export const Testimonies = () => (
       <div className="what-we-do-grid">
         {services.map((s) => (
           <div key={s.title}>
-            <div className="what-we-do-icon">{s.icon}</div>
+            <div className="what-we-do-media"><img src={s.img} alt={s.title} loading="lazy" /><div className="what-we-do-icon">{s.icon}</div></div>
             <h3>{s.title}</h3>
             <p>{s.text}</p>
           </div>

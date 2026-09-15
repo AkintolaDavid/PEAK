@@ -12,8 +12,7 @@ export const Webring = () => (
       <div className="about-copy">
         <p className="section-label">Who we are</p>
         <h2>Local expertise.<br/>Global standards.</h2>
-        <p>Peak Shipping Agency Limited has provided dependable shipping agency and logistics services since 2007. Registered with the Nigerian Ports Authority and relevant maritime authorities, we help vessels call safely, efficiently and without costly delays.</p>
-        <p>Our experienced team combines on-ground knowledge with responsive, transparent service at every stage of your operation.</p>
+        <p>Since 2007, Peak Shipping Agency has helped vessels call Nigerian ports safely, efficiently and without costly delays — backed by on-ground knowledge and transparent service at every stage.</p>
         <Link to="/aboutus" className="text-link">Discover our story <FaArrowRight /></Link>
       </div>
     </section>
